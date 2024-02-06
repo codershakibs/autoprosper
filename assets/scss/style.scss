@@ -1,0 +1,469 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      - 
+ * @created_by  - Asraful Hoque
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+
+/* fonts import -END */
+
+/* reset, root */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #2161e0;
+    --aliceblue: #e7efff;
+    --pink: #e93266;
+    --lavender: #ffedf2;
+    --dark: #101044;
+    --eastbay: #54547a;
+    --stormgrey: #6f6f87;
+    --manatee: #8d8dae;
+    --solitude: #e9e9f1;
+    --lavender2: #f2f2fb;
+    --lavender3: #f9f9fe;
+    --skyblue: #219fff;
+    --aliceblue2: #e9f6ff;
+    --green: #17bd8d;
+    --greenlight: #e9fbf6;
+    --yellow: #ffa114;
+    --floralwhite: #fff7eb;
+    --sunsetorange: #ff4e3e;
+    --rose: #ffedec;
+    --lavender4: #e1deff;
+    --columbiablue: #b0ddff;
+    --rose2: #ffe6e4;
+}
+
+/* reset, root - END */
+
+// container resize
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1446px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: #4B5768;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400px;
+}
+
+
+// container resize - end
+
+/* helper , base classes */
+
+// text-color
+.text-dark {
+    color: #001B44;
+}
+
+.text-dark-2 {
+    color: #8E97A6;
+}
+
+
+
+.text-clr-blue {
+    color: var(--blue);
+}
+
+.text-clr-aliceblue {
+    color: var(--aliceblue);
+}
+
+.text-clr-aliceblue2 {
+    color: var(--aliceblue2);
+}
+
+.text-clr-pink {
+    color: var(--pink);
+}
+
+.text-clr-lavender {
+    color: var(--lavender);
+}
+
+.text-clr-dark {
+    color: var(--dark);
+}
+
+.text-clr-eastbay {
+    color: var(--eastbay);
+}
+
+.text-clr-stormgrey {
+    color: var(--stormgrey);
+}
+
+.text-clr-manatee {
+    color: var(--manatee);
+}
+
+.text-clr-solitude {
+    color: var(--solitude);
+}
+
+.text-clr-lavender2 {
+    color: var(--lavender2);
+}
+
+.text-clr-lavender3 {
+    color: var(--lavender3);
+}
+
+.text-clr-lavender4 {
+    color: var(--lavender4);
+}
+
+.text-clr-skyblue {
+    color: var(--skyblue);
+}
+
+.text-clr-green {
+    color: var(--green);
+}
+
+.text-clr-greenlight {
+    color: var(--greenlight);
+}
+
+.text-clr-yellow {
+    color: var(--yellow);
+}
+
+.text-clr-floralwhite {
+    color: var(--floralwhite);
+}
+
+.text-clr-sunsetorange {
+    color: var(--sunsetorange);
+}
+
+.text-clr-rose {
+    color: var(--rose);
+}
+
+.text-clr-rose2 {
+    color: var(--rose2);
+}
+
+.text-clr-columbiablue {
+    color: var(--columbiablue);
+}
+
+// BG color
+.bg-clr-blue {
+    background-color: var(--blue);
+}
+
+.bg-clr-aliceblue {
+    background-color: var(--aliceblue);
+}
+
+.bg-clr-aliceblue2 {
+    background-color: var(--aliceblue2);
+}
+
+.bg-clr-pink {
+    background-color: var(--pink);
+}
+
+.bg-clr-lavender {
+    background-color: var(--lavender);
+}
+
+.bg-clr-dark {
+    background-color: var(--dark);
+}
+
+.bg-clr-eastbay {
+    background-color: var(--eastbay);
+}
+
+.bg-clr-stormgrey {
+    background-color: var(--stormgrey);
+}
+
+.bg-clr-manatee {
+    background-color: var(--manatee);
+}
+
+.bg-clr-solitude {
+    background-color: var(--solitude);
+}
+
+.bg-clr-lavender2 {
+    background-color: var(--lavender2);
+}
+
+.bg-clr-lavender3 {
+    background-color: var(--lavender3);
+}
+
+.bg-clr-lavender4 {
+    background-color: var(--lavender4);
+}
+
+.bg-clr-skyblue {
+    background-color: var(--skyblue);
+}
+
+.bg-clr-green {
+    background-color: var(--green);
+}
+
+.bg-clr-greenlight {
+    background-color: var(--greenlight);
+}
+
+.bg-clr-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-clr-floralwhite {
+    background-color: var(--floralwhite);
+}
+
+.bg-clr-sunsetorange {
+    background-color: var(--sunsetorange);
+}
+
+.bg-clr-rose {
+    background-color: var(--rose);
+}
+
+.bg-clr-rose2 {
+    background-color: var(--rose2);
+}
+
+.bg-clr-columbiablue {
+    background-color: var(--columbiablue);
+}
+
+.fs-13 {
+    font-size: 13px;
+    line-height: normal;
+}
+
+.fs-9 {
+    font-size: 9px;
+    line-height: normal;
+}
+
+.fs-10 {
+    font-size: 10px;
+    line-height: normal;
+}
+
+.fs-14 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.fs-16 {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.fs-20 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.fs-30 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.fs-36 {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.fs-44 {
+    font-size: 44px;
+    line-height: 57px;
+}
+
+.fs-54 {
+    font-size: 54px;
+    line-height: 3.37rem;
+}
+
+.fs-56 {
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-medium {
+    font-weight: 400px;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.box-shadow {
+    box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
+}
+
+.box-shadow2 {
+    box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05);
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.radius-16 {
+    border-radius: 16px;
+}
+
+.radius-100 {
+    border-radius: 100px;
+}
+
+// padding 
+.banner-padding {
+    padding: 260px 0 500px 0;
+}
+
+.p-96 {
+    padding: 96px 0;
+}
+
+/* helper , base classes  - END*/
+
+// nav start 
+nav {
+    .navbar-btn {
+        background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%) !important;
+        padding: 13px 20px;
+
+        a {
+            color: #001B44 !important;
+
+
+        }
+    }
+
+
+}
+
+// banner start 
+.banner {
+    background-image: url(../img/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: -100px;
+
+    .banner-btn {
+        background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%) !important;
+        padding: 13px 20px;
+        display: inline-block;
+        color: #001B44;
+    }
+
+    .banner-head,
+    .banner-sub-head {
+        max-width: 725px;
+    }
+
+    .dreams {
+        background: linear-gradient(129deg, #FF3363 13.86%, #FFE664 84.98%, #00FFA2 91.85%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// discover
+.discover {
+    .discounts {
+        padding: 47px 70px 47px 70px;
+        border-radius: 12px;
+        border: 1px solid var(--dark-dark_5, #B7BCC3);
+        background: rgba(255, 255, 255, 0.90);
+        backdrop-filter: blur(7.5px);
+        border-radius: 10px;
+        background-image: url(../img/discount-bg.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .discount-off {
+            top: 6px;
+            left: 6px;
+
+
+        }
+
+        h5 {
+            background-color: #FFE664;
+            display: inline;
+            padding: 8px 15px;
+            border-radius: 25px;
+        }
+    }
+
+    .discover-right-col {
+        border-radius: 12px;
+        border: 1px solid #00FFA2;
+        box-shadow: 0px 36px 72px -18px rgba(0, 27, 68, 0.25);
+        padding: 25px;
+    }
+}
