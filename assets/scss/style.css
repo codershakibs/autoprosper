@@ -160,6 +160,17 @@ p {
   }
 }
 
+.fs-24-v3 {
+  font-size: 24px;
+  line-height: 31px;
+}
+@media (max-width: 575px) {
+  .fs-24-v3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
 .fs-20 {
   font-size: 20px;
   line-height: 30px;
@@ -482,7 +493,12 @@ nav .navbar-btn a {
   max-height: 500px;
 }
 .ideal-ride .ideal-card .ideal-card-img {
-  max-height: 334px;
+  max-height: 200px;
+}
+@media (max-width: 575px) {
+  .ideal-ride .ideal-card .ideal-card-img {
+    min-height: 200px;
+  }
 }
 .ideal-ride .ideal-card-logo {
   left: -27px;
