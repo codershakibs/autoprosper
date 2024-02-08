@@ -133,6 +133,11 @@ p {
     line-height: 22px;
 }
 
+.fs-14-v2 {
+    font-size: 14px;
+    line-height: normal;
+}
+
 .fs-15 {
     font-size: 15px;
     line-height: 25px;
@@ -820,6 +825,25 @@ footer {
             color: #97A5C1;
 
 
+        }
+    }
+
+    .footer-divider {
+        height: 1px;
+        background-color: #97A5C1;
+        margin: 60px 0;
+    }
+
+    .copy {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 1px;
+            background-color: #97A5C1;
+            right: -24px;
         }
     }
 }
