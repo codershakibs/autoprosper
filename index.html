@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="assets/css/nioicon.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/scss/style.css">
     <!-- jQuery (necessary for jQuery plugins) -->
@@ -56,10 +58,23 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                 </a>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 22V18C20 15.2386 17.7614 13 15 13H9C6.23858 13 4 15.2386 4 18V22" stroke="white"
+                            stroke-width="2" />
+                        <circle cx="12" cy="6" r="3" stroke="white" stroke-width="2" />
+                    </svg>
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="7" width="20" height="2" fill="white" />
+                            <rect x="2" y="16" width="20" height="2" fill="white" />
+                        </svg>
+                    </span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-5">
@@ -103,7 +118,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            </ul>navbar-btn
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -136,7 +151,7 @@
 
                     </ul>
                     <div class="navbar-btn d-flex radius-100">
-                        <a class="text-white px-4 fs-13 fw-bold" href="#">Sign Up</a>
+                        <a class="text-white  fs-13 fw-bold" href="#">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -189,13 +204,15 @@
     </section>
 
     <!-- discover  -->
-    <section class="discover p-96">
+    <section class="discover p-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div>
-                        <h2 class="fs-44 fw-bold text-dark">Discover your purchasing alternatives now.</h2>
-                        <p class="mt-3">Calculate your affordable car budget. Explore vehicles within your financial
+                        <h2 class="discover-left-head fs-44 fw-bold text-dark">Discover your purchasing alternatives
+                            now.</h2>
+                        <p class="discover-left-sub mt-3">Calculate your affordable car budget. Explore vehicles within
+                            your financial
                             range based on
                             your affordability assessment.</p>
                         <div class="mt-3">
@@ -206,47 +223,495 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <div class="discover-right-col d-flex align-items-center justify-content-center flex-wrap gap-3">
-                        <div class="discounts position-relative">
-                            <div class="discount-off position-absolute">
-                                <h5 class="text-start fs-10 fw-bold">30% off</h5>
-                            </div> <a href="">
-                                <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
-                            </a>
+                    <!-- hello  -->
+                    <div class="splide discover-card-1 d-block d-lg-none">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="discounts position-relative">
+                                        <div class="discount-off position-absolute">
+                                            <h5 class="text-start fs-10 fw-bold">10% off</h5>
+                                        </div> <a href="">
+                                            <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="discounts position-relative">
+                                        <div class="discount-off position-absolute">
+                                            <h5 class="text-start fs-10 fw-bold">20% off</h5>
+                                        </div> <a href="">
+                                            <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="discounts position-relative">
+                                        <div class="discount-off position-absolute">
+                                            <h5 class="text-start fs-10 fw-bold">10% off</h5>
+                                        </div> <a href="">
+                                            <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="discounts position-relative">
+                                        <div class="discount-off position-absolute">
+                                            <h5 class="text-start fs-10 fw-bold">40% off</h5>
+                                        </div> <a href="">
+                                            <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="discounts position-relative">
+                                        <div class="discount-off position-absolute">
+                                            <h5 class="text-start fs-10 fw-bold">40% off</h5>
+                                        </div> <a href="">
+                                            <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
                         </div>
-                        <div class="discounts position-relative">
-                            <div class="discount-off position-absolute">
-                                <h5 class="text-start fs-10 fw-bold">20% off</h5>
-                            </div> <a href="">
-                                <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
-                            </a>
+                    </div>
+
+                    <div class="discover-right-col ">
+                        <div
+                            class="discover-right-head d-flex align-items-center justify-content-center flex-wrap gap-3 d-none d-lg-flex">
+                            <div class="discounts position-relative">
+                                <div class="discount-off position-absolute">
+                                    <h5 class="text-start fs-10 fw-bold">30% off</h5>
+                                </div>
+                                <a href="">
+                                    <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                </a>
+                            </div>
+                            <div class="discounts position-relative">
+                                <div class="discount-off position-absolute">
+                                    <h5 class="text-start fs-10 fw-bold">20% off</h5>
+                                </div> <a href="">
+                                    <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                </a>
+                            </div>
+                            <div class="discounts position-relative">
+                                <div class="discount-off position-absolute">
+                                    <h5 class="text-start fs-10 fw-bold">10% off</h5>
+                                </div> <a href="">
+                                    <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                </a>
+                            </div>
+
+                            <div class="discounts position-relative">
+                                <div class="discount-off position-absolute">
+                                    <h5 class="text-start fs-10 fw-bold">40% off</h5>
+                                </div> <a href="">
+                                    <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                </a>
+                            </div>
+                            <div class="discounts position-relative">
+                                <div class="discount-off position-absolute">
+                                    <h5 class="text-start fs-10 fw-bold">50% off</h5>
+                                </div> <a href="">
+                                    <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                </a>
+                            </div>
+                            <div class="discounts position-relative">
+                                <div class="discount-off position-absolute">
+                                    <h5 class="text-start fs-10 fw-bold">22% off</h5>
+                                </div> <a href="">
+                                    <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                                </a>
+                            </div>
                         </div>
-                        <div class="discounts position-relative">
-                            <div class="discount-off position-absolute">
-                                <h5 class="text-start fs-10 fw-bold">10% off</h5>
-                            </div> <a href="">
-                                <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
-                            </a>
+                        <div class="discover-right-middle mt-2" </div>
+                            <div class="row gy-3">
+                                <div class="col-lg-6">
+                                    <div class="right-middle">
+                                        <h5 class="fs-10 fw-bold text-dark-2">Searching for</h5>
+                                        <div>
+                                            <select class="discover-select">
+                                                <option value="volvo">The Enthusiast</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="right-middle">
+                                        <h5 class="fs-10 fw-bold text-dark-2">Down payment</h5>
+                                        <div>
+                                            <select class="discover-select">
+                                                <option value="volvo">$3000</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="right-middle">
+                                        <h5 class="fs-10 fw-bold text-dark-2">Credit score</h5>
+                                        <div>
+                                            <select class="discover-select">
+                                                <option value="volvo">Credit score</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="right-middle">
+                                        <h5 class="fs-10 fw-bold text-dark-2">Monthly payment</h5>
+                                        <div>
+                                            <select class="discover-select">
+                                                <option value="volvo">$500</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="discounts position-relative">
-                            <div class="discount-off position-absolute">
-                                <h5 class="text-start fs-10 fw-bold">40% off</h5>
-                            </div> <a href="">
-                                <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
-                            </a>
+                        <div class="mt-4 d-flex align-items-center gap-4">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Include trade-in</p>
+
                         </div>
-                        <div class="discounts position-relative">
-                            <div class="discount-off position-absolute">
-                                <h5 class="text-start fs-10 fw-bold">50% off</h5>
-                            </div> <a href="">
-                                <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
-                            </a>
+                        <div class="mt-5">
+                            <a class="discount-btn d-flex justify-content-center fs-16 fw-bold text-dark" href="">See
+                                matches</a>
                         </div>
-                        <div class="discounts position-relative">
-                            <div class="discount-off position-absolute">
-                                <h5 class="text-start fs-10 fw-bold">22% off</h5>
-                            </div> <a href="">
-                                <h6 class="text-center fs-9 fw-bold text-dark-2">Click to select</h6>
+                    </div>
+    </section>
+
+    <!-- ideal ride  -->
+    <section class="ideal-ride p-100">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fs-44 fw-bold text-dark">Unveil Your Ideal Ride</h2>
+                <p class="ideal-sub mt-3">Our team, fueled by passion and expertise, simplifies the car
+                    buying journey. We're your knowledgeable partners, ensuring a seamless experience from start to
+                    finish.</p>
+            </div>
+            <div class="mt-5">
+                <section class="splide ideal-card-1" aria-label="Basic Structure Example">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+
+                            <svg class="ideal-slide-prev" xmlns="http://www.w3.org/2000/svg" width=20" height="20"
+                                viewBox="0 0 20 20" fill="#001B44">
+                                <path
+                                    d="M13.4779 10.833H3.33203V9.16634H13.4779L8.8112 4.49967L9.9987 3.33301L16.6654 9.99967L9.9987 16.6663L8.8112 15.4997L13.4779 10.833Z"
+                                    fill="#0A1835" />
+                            </svg>
+
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M13.4779 10.833H3.33203V9.16634H13.4779L8.8112 4.49967L9.9987 3.33301L16.6654 9.99967L9.9987 16.6663L8.8112 15.4997L13.4779 10.833Z"
+                                    fill="#0A1835" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="ideal-card">
+                                    <div class="position-relative">
+                                        <img src="assets/img/ideal-card-2.svg" alt="">
+                                        <svg class="ideal-card-logo position-absolute"
+                                            xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                                            viewBox="0 0 46 46" fill="none">
+                                            <path
+                                                d="M32.635 9.90476C29.8786 9.01777 26.45 8.49512 22.7328 8.49512C19.0157 8.49512 15.5849 9.01777 12.8307 9.90476C5.50052 12.2621 0.464844 17.1547 0.464844 22.8106C0.464844 30.7653 10.4343 37.2171 22.735 37.2171C35.0314 37.2171 45.0008 30.7653 45.0008 22.8106C45.0008 17.1547 39.963 12.2621 32.635 9.90476ZM22.7328 31.0212C20.8981 31.0212 19.3974 27.4125 19.3107 22.8778C21.5875 23.0832 23.8782 23.0832 26.155 22.8778C26.0661 27.4147 24.5675 31.0212 22.7328 31.0212ZM19.5427 19.3298C20.0437 16.1462 21.282 13.893 22.7328 13.893C24.1815 13.893 25.422 16.1484 25.9208 19.3298C23.7992 19.5235 21.6643 19.5235 19.5427 19.3298ZM27.8726 19.0891C27.1288 14.0925 25.1075 10.512 22.7328 10.512C20.3581 10.512 18.3369 14.0925 17.5931 19.0891C13.0692 18.3821 9.90727 16.7751 9.90727 14.9036C9.90727 12.3814 15.6499 10.3363 22.7328 10.3363C29.8158 10.3363 35.5584 12.3814 35.5584 14.9036C35.5584 16.7751 32.3965 18.3821 27.8726 19.0891ZM3.71352 22.2814C3.71352 19.8416 4.65256 17.558 6.28991 15.591C6.27074 15.7275 6.26132 15.8652 6.26172 16.0031C6.26172 19.0718 10.8702 21.6785 17.296 22.6371C17.2916 22.8691 17.2873 23.1012 17.2873 23.3354C17.2873 29.039 18.8704 33.8708 21.0565 35.5364C11.3364 34.9443 3.71352 29.2385 3.71352 22.2814ZM24.4092 35.5385C26.5953 33.873 28.1784 29.0412 28.1784 23.3376C28.1784 23.1033 28.1762 22.8713 28.1697 22.6392C34.5934 21.6807 39.2018 19.0718 39.2018 16.0053C39.2018 15.8665 39.191 15.7298 39.1714 15.5932C40.8088 17.5602 41.7478 19.846 41.7478 22.2836C41.75 29.2385 34.1271 34.9443 24.4092 35.5385Z"
+                                                fill="#EB0A1E" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h4 class="fs-24 fw-semi-medium text-dark">2024 Nissan Kicks®</h4>
+                                        <p class="ideal-card-sub">Knowledgeable partners, ensuring a seamless
+                                            experience from
+                                            start
+                                            to
+                                            finish.</p>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <g clip-path="url(#clip0_913_3608)">
+                                                    <path
+                                                        d="M12.0009 4.25474C9.41294 4.25474 7.30747 6.36021 7.30747 8.94816C7.30747 11.5361 9.41294 13.6416 12.0009 13.6416C14.5889 13.6416 16.6943 11.5361 16.6943 8.94816C16.6943 6.36021 14.5889 4.25474 12.0009 4.25474ZM12.0009 11.7642C10.4481 11.7642 9.18484 10.5009 9.18484 8.94816C9.18484 7.39539 10.4481 6.13211 12.0009 6.13211C13.5537 6.13211 14.8169 7.39539 14.8169 8.94816C14.8169 10.5009 13.5537 11.7642 12.0009 11.7642ZM12.0009 0.5C7.34258 0.5 3.55273 4.28984 3.55273 8.94816C3.55273 10.6604 4.06239 12.3094 5.02661 13.7171L5.03182 13.7136L12.0009 24.5L18.97 13.7136L18.9751 13.7171C19.9394 12.3094 20.4491 10.6603 20.4491 8.94811C20.4491 4.28984 16.6592 0.5 12.0009 0.5ZM17.7033 12.2146L12.0009 21.0406L6.29853 12.2147C5.72921 11.2238 5.4301 10.1048 5.4301 8.94816C5.4301 5.32503 8.37776 2.37737 12.0009 2.37737C15.624 2.37737 18.5717 5.32503 18.5717 8.94816C18.5717 10.1048 18.2726 11.2238 17.7033 12.2146Z"
+                                                        fill="url(#paint0_linear_913_3608)" />
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_913_3608" x1="12.0009" y1="24.5"
+                                                        x2="12.0009" y2="0.5" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#009EFD" />
+                                                        <stop offset="1" stop-color="#2AF598" />
+                                                    </linearGradient>
+                                                    <clipPath id="clip0_913_3608">
+                                                        <rect width="24" height="24" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <h5 class="fs-16 fw-semi-medium text-dark-v2">Garland, Texas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="ideal-card">
+                                    <div class="position-relative">
+                                        <img src="assets/img/ideal-card-2.svg" alt="">
+                                        <svg class="ideal-card-logo position-absolute"
+                                            xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                                            viewBox="0 0 46 46" fill="none">
+                                            <mask id="mask0_913_3668" style="mask-type:luminance"
+                                                maskUnits="userSpaceOnUse" x="1" y="5" width="44" height="37">
+                                                <path d="M45 5H1V41.8076H45V5Z" fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask0_913_3668)">
+                                                <path
+                                                    d="M7.3088 17.9315C9.59317 11.255 15.9064 6.76948 23.009 6.76948C30.1117 6.76948 36.4258 11.255 38.7102 17.9315L38.7287 17.987H43.7272V17.3888L41.6481 17.1476C40.3667 16.9978 40.0924 16.4329 39.7446 15.7165L39.6558 15.5399C36.6514 9.13795 30.1154 5.00098 23.0044 5.00098C15.8934 5.00098 9.35744 9.13795 6.35385 15.5399L6.2688 15.7137C5.92211 16.4302 5.64476 16.995 4.36624 17.1448L2.28711 17.3888V17.9897H7.28569L7.3088 17.9315Z"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M38.7231 28.822L38.7046 28.8775C36.4193 35.554 30.1108 40.0386 23.0044 40.0386C15.8962 40.0386 9.58762 35.5512 7.3088 28.8738L7.2894 28.8184H2.28711V29.4183L4.36531 29.6605C5.64476 29.8103 5.92211 30.3761 6.26788 31.0916L6.35197 31.2636C9.35557 37.6683 15.8916 41.8071 23.0026 41.808C30.1117 41.808 36.6477 37.6701 39.6524 31.2691L39.7373 31.0944C40.084 30.3798 40.3575 29.814 41.6397 29.6651L43.7199 29.423V28.823L38.7231 28.822Z"
+                                                    fill="#343434" />
+                                                <path d="M11.0074 20.8418H9.875V25.9634H11.0074V20.8418Z"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M7.36772 25.9624V20.8418H6.23432V24.658L2.45881 20.8418H1V25.9624H2.1334V22.1203L5.93573 25.9624H7.36772Z"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M32.727 20.8418L29.5293 25.9624H30.904L31.4725 25.0481H35.2018L35.7704 25.9624H37.1441L33.9482 20.8418H32.727ZM34.6166 24.0774H32.0568L33.3381 22.0196L34.6166 24.0774Z"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M26.6555 24.8969C26.6232 24.9025 26.479 24.9071 26.4216 24.9071H21.8631V25.9628H26.4928C26.5317 25.9628 26.7979 25.9628 26.8626 25.9554C27.8074 25.8713 28.2373 25.0846 28.2373 24.3903C28.2373 23.696 27.7862 22.9278 26.9292 22.8437C26.8063 22.8314 26.6829 22.8259 26.5594 22.8271H23.5327C23.42 22.8291 23.3073 22.8204 23.1962 22.8012C23.0992 22.775 23.0141 22.7164 22.9549 22.6352C22.8957 22.554 22.866 22.455 22.8708 22.3547C22.8704 22.2542 22.9028 22.1564 22.963 22.076C23.0232 21.9956 23.108 21.937 23.2045 21.9091C23.3086 21.8863 23.4153 21.8785 23.5216 21.8859H27.8906V20.8413H23.4532C23.3049 20.8388 23.1566 20.8465 23.0095 20.8644C22.6469 20.9079 22.3136 21.0849 22.0744 21.3607C21.8351 21.6365 21.7071 21.9914 21.7152 22.3565C21.7152 22.9907 22.1136 23.7303 22.9891 23.8569C23.1472 23.8743 23.3062 23.8814 23.4652 23.8782H26.4143C26.4697 23.8782 26.5991 23.8782 26.6278 23.8846C26.7497 23.8992 26.8624 23.9571 26.9451 24.0478C27.0278 24.1385 27.0751 24.256 27.0784 24.3787C27.0816 24.5015 27.0406 24.6213 26.9628 24.7163C26.885 24.8112 26.7756 24.8751 26.6546 24.896"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M18.1565 24.896C18.1232 24.9015 17.979 24.9062 17.9226 24.9062H13.3631V25.9619H17.9937C18.0317 25.9619 18.2988 25.9619 18.3635 25.9545C19.3083 25.8704 19.7392 25.0837 19.7392 24.3894C19.7392 23.6951 19.2908 22.9269 18.4347 22.8437C18.3118 22.8315 18.1884 22.8259 18.0649 22.827H15.0336C14.9209 22.8291 14.8082 22.8205 14.6971 22.8012C14.6 22.775 14.5148 22.7165 14.4555 22.6353C14.3961 22.5541 14.3663 22.4551 14.3708 22.3546C14.3705 22.2541 14.403 22.1562 14.4634 22.0758C14.5238 21.9953 14.6088 21.9368 14.7055 21.909C14.8095 21.8863 14.9163 21.8785 15.0225 21.8859H19.3906V20.8413H14.9532C14.8049 20.8387 14.6566 20.8464 14.5094 20.8644C14.147 20.9081 13.8138 21.0851 13.5746 21.3609C13.3354 21.6366 13.2073 21.9915 13.2152 22.3565C13.2152 22.9907 13.6136 23.7303 14.4891 23.8569C14.6475 23.8743 14.8068 23.8814 14.9661 23.8782H17.9143C17.9706 23.8782 18.0992 23.8782 18.1287 23.8846C18.2507 23.8991 18.3633 23.9571 18.446 24.0478C18.5287 24.1385 18.5761 24.256 18.5793 24.3787C18.5826 24.5015 18.5415 24.6213 18.4637 24.7162C18.3859 24.8112 18.2765 24.875 18.1555 24.896"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M44.9987 25.9624V20.8418H43.8654V24.658L40.0898 20.8418H38.6309V25.9624H39.7642V22.1203L43.5665 25.9624H44.9987Z"
+                                                    fill="#343434" />
+                                                <path
+                                                    d="M42.4088 38.6458C42.5986 38.6489 42.7838 38.7081 42.9402 38.8161C43.0964 38.924 43.2176 39.0759 43.288 39.2525C43.3581 39.429 43.3749 39.6225 43.3355 39.8085C43.2961 39.9944 43.2023 40.1646 43.0665 40.2975C42.9307 40.4304 42.7585 40.5202 42.5718 40.5555C42.3851 40.5908 42.1919 40.57 42.017 40.4958C41.8418 40.4216 41.6929 40.2973 41.5885 40.1385C41.4837 39.9797 41.4286 39.7936 41.4297 39.6035C41.4297 39.4759 41.455 39.3495 41.5043 39.2318C41.5537 39.1142 41.626 39.0076 41.7174 38.9184C41.8085 38.8291 41.9168 38.759 42.0354 38.7122C42.1544 38.6654 42.281 38.6428 42.4088 38.6458ZM42.4088 40.3829C42.509 40.3829 42.6085 40.3627 42.7007 40.3235C42.7933 40.2843 42.8767 40.2269 42.9468 40.1547C43.0164 40.0824 43.0707 39.9969 43.1067 39.9031C43.1426 39.8094 43.1591 39.7094 43.1557 39.6091C43.1511 39.4615 43.1032 39.3185 43.0179 39.1981C42.9326 39.0777 42.8136 38.9851 42.6759 38.9319C42.5381 38.8787 42.3878 38.8673 42.2435 38.8992C42.0993 38.931 41.9677 39.0046 41.8651 39.1108C41.7626 39.217 41.6937 39.3511 41.6669 39.4963C41.6405 39.6415 41.657 39.7913 41.7151 39.9271C41.7729 40.0628 41.8697 40.1785 41.9933 40.2595C42.1165 40.3406 42.2611 40.3835 42.4088 40.3829ZM42.0388 40.1055V39.1357C42.157 39.1137 42.2768 39.1029 42.3966 39.1034C42.5706 39.1034 42.8228 39.1357 42.8228 39.3881C42.8193 39.4427 42.7979 39.4946 42.7619 39.5356C42.7256 39.5766 42.677 39.6044 42.6231 39.6146V39.6303C42.7157 39.6617 42.7654 39.7403 42.7914 39.867C42.804 39.9509 42.8289 40.0325 42.8653 40.1092H42.6445C42.6074 40.0327 42.5825 39.951 42.5706 39.867C42.5335 39.7144 42.4494 39.7144 42.2496 39.7144V40.1092L42.0388 40.1055ZM42.2542 39.5582C42.418 39.5582 42.5974 39.5582 42.5974 39.4103C42.5974 39.3179 42.5335 39.2577 42.3809 39.2577C42.3384 39.2566 42.2959 39.2603 42.2542 39.2688V39.5582Z"
+                                                    fill="#343434" />
+                                            </g>
+                                        </svg>
+
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h4 class="fs-24 fw-semi-medium text-dark">2024 Nissan Kicks®</h4>
+                                        <p class="ideal-card-sub">Knowledgeable partners, ensuring a seamless
+                                            experience from
+                                            start
+                                            to
+                                            finish.</p>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <g clip-path="url(#clip0_913_3608)">
+                                                    <path
+                                                        d="M12.0009 4.25474C9.41294 4.25474 7.30747 6.36021 7.30747 8.94816C7.30747 11.5361 9.41294 13.6416 12.0009 13.6416C14.5889 13.6416 16.6943 11.5361 16.6943 8.94816C16.6943 6.36021 14.5889 4.25474 12.0009 4.25474ZM12.0009 11.7642C10.4481 11.7642 9.18484 10.5009 9.18484 8.94816C9.18484 7.39539 10.4481 6.13211 12.0009 6.13211C13.5537 6.13211 14.8169 7.39539 14.8169 8.94816C14.8169 10.5009 13.5537 11.7642 12.0009 11.7642ZM12.0009 0.5C7.34258 0.5 3.55273 4.28984 3.55273 8.94816C3.55273 10.6604 4.06239 12.3094 5.02661 13.7171L5.03182 13.7136L12.0009 24.5L18.97 13.7136L18.9751 13.7171C19.9394 12.3094 20.4491 10.6603 20.4491 8.94811C20.4491 4.28984 16.6592 0.5 12.0009 0.5ZM17.7033 12.2146L12.0009 21.0406L6.29853 12.2147C5.72921 11.2238 5.4301 10.1048 5.4301 8.94816C5.4301 5.32503 8.37776 2.37737 12.0009 2.37737C15.624 2.37737 18.5717 5.32503 18.5717 8.94816C18.5717 10.1048 18.2726 11.2238 17.7033 12.2146Z"
+                                                        fill="url(#paint0_linear_913_3608)" />
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_913_3608" x1="12.0009" y1="24.5"
+                                                        x2="12.0009" y2="0.5" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#009EFD" />
+                                                        <stop offset="1" stop-color="#2AF598" />
+                                                    </linearGradient>
+                                                    <clipPath id="clip0_913_3608">
+                                                        <rect width="24" height="24" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <h5 class="fs-16 fw-semi-medium text-dark-v2">Garland, Texas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="ideal-card">
+                                    <div class="position-relative">
+                                        <img src="assets/img/ideal-card-2.svg" alt="">
+                                        <svg class="ideal-card-logo position-absolute"
+                                            xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                                            viewBox="0 0 46 46" fill="none">
+                                            <path
+                                                d="M23 40.6433C13.3567 40.6433 5.42833 32.6433 5.42833 23C5.42833 21 5.785 19.0717 6.42833 17.215L16.715 37.215C16.8567 37.5 17 37.715 17.3567 37.715C17.715 37.715 17.8567 37.5 18 37.215L22.785 26.5717C22.8567 26.4283 22.9283 26.3567 23 26.3567C23.1433 26.3567 23.1433 26.5 23.215 26.5717L28.0717 37.215C28.215 37.5 28.3567 37.715 28.715 37.715C29.0717 37.715 29.215 37.5 29.3567 37.215L39.6433 17.215C40.285 19 40.6433 20.9283 40.6433 23C40.5717 32.6433 32.6433 40.6433 23 40.6433ZM23 18.4283C22.8567 18.4283 22.8567 18.285 22.785 18.215L17.285 6.35667C20.9788 5.02594 25.0212 5.02594 28.715 6.35667L23.215 18.215C23.1433 18.285 23.1433 18.4283 23 18.4283ZM17.215 31.285C17.0717 31.285 17.0717 31.1433 17 31.0717L8 13.7833C9.57167 11.2133 11.8567 9.07 14.5 7.57L20.8567 21.2833C21 21.57 21.1433 21.6417 21.3567 21.6417H24.6433C24.8567 21.6417 25 21.57 25.1433 21.2833L31.4283 7.57C34.0717 9.07 36.3567 11.2133 37.9283 13.7833L29 31.0717C28.9283 31.215 28.8567 31.285 28.785 31.285C28.6433 31.285 28.6433 31.1433 28.5717 31.0717L25.1433 23.5C25 23.215 24.8567 23.1433 24.6433 23.1433H21.3567C21.1433 23.1433 21 23.215 20.8567 23.5L17.4283 31.0717C17.3567 31.1433 17.3567 31.285 17.215 31.285ZM23 43C34.0717 43 43 34.0717 43 23C43 11.9283 34.0717 3 23 3C11.9283 3 3 11.9283 3 23C3 34.0717 11.9283 43 23 43Z"
+                                                fill="#001E50" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h4 class="fs-24 fw-semi-medium text-dark">2024 Nissan Kicks®</h4>
+                                        <p class="ideal-card-sub">Knowledgeable partners, ensuring a seamless
+                                            experience from
+                                            start
+                                            to
+                                            finish.</p>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                                viewBox="0 0 24 25" fill="none">
+                                                <g clip-path="url(#clip0_913_3608)">
+                                                    <path
+                                                        d="M12.0009 4.25474C9.41294 4.25474 7.30747 6.36021 7.30747 8.94816C7.30747 11.5361 9.41294 13.6416 12.0009 13.6416C14.5889 13.6416 16.6943 11.5361 16.6943 8.94816C16.6943 6.36021 14.5889 4.25474 12.0009 4.25474ZM12.0009 11.7642C10.4481 11.7642 9.18484 10.5009 9.18484 8.94816C9.18484 7.39539 10.4481 6.13211 12.0009 6.13211C13.5537 6.13211 14.8169 7.39539 14.8169 8.94816C14.8169 10.5009 13.5537 11.7642 12.0009 11.7642ZM12.0009 0.5C7.34258 0.5 3.55273 4.28984 3.55273 8.94816C3.55273 10.6604 4.06239 12.3094 5.02661 13.7171L5.03182 13.7136L12.0009 24.5L18.97 13.7136L18.9751 13.7171C19.9394 12.3094 20.4491 10.6603 20.4491 8.94811C20.4491 4.28984 16.6592 0.5 12.0009 0.5ZM17.7033 12.2146L12.0009 21.0406L6.29853 12.2147C5.72921 11.2238 5.4301 10.1048 5.4301 8.94816C5.4301 5.32503 8.37776 2.37737 12.0009 2.37737C15.624 2.37737 18.5717 5.32503 18.5717 8.94816C18.5717 10.1048 18.2726 11.2238 17.7033 12.2146Z"
+                                                        fill="url(#paint0_linear_913_3608)" />
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_913_3608" x1="12.0009" y1="24.5"
+                                                        x2="12.0009" y2="0.5" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#009EFD" />
+                                                        <stop offset="1" stop-color="#2AF598" />
+                                                    </linearGradient>
+                                                    <clipPath id="clip0_913_3608">
+                                                        <rect width="24" height="24" fill="white"
+                                                            transform="translate(0 0.5)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <h5 class="fs-16 fw-semi-medium text-dark-v2">Garland, Texas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- prospering-customers  -->
+    <section class="prospering-customers p-100">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="customers-head fs-44 fw-bold text-white ">Delivery to prospering customers</h2>
+                <p class="customers-sub mt-3">Chronicles of the moment the keys are handed over in your
+                    driveway, the daily drive or feeling your vacation vibes. <span class="drive">
+                        Use #DeliveredByDriveway
+                    </span>
+                    for a chance to be featured in our happy drivers gallery.</p>
+            </div>
+        </div>
+        <div class="customers-imgs mt-5">
+            <section class="splide customers-card-1">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-1.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-2.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-3.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-4.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-5.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-6.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-7.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div>
+                                <img src="assets/img/customers-img-8.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- military-offer  -->
+    <section class="military-offer p-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div>
+                        <img src="assets/img/military-left-img.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center text-lg-start">
+                        <h6 class="miltary-mini-head fs-12 fw-bold text-dark">Military Savings</h6>
+                        <h2 class=" miltary-head fs-44 fw-bold text-dark mt-3">Military member special discount program
+                            offer</h2>
+                        <p class="miltary-sub-head mt-3">Attention military members! Unlock exclusive discounts on our
+                            lineup of pickup
+                            trucks as a
+                            thank
+                            you for your service.
+                            Experience reliability and power tailored to your needs.</p>
+                        <div class="mt-3">
+                            <a class="green-yello-btn" href="">Learn more
+                                <span>
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4779 11.2236H3.33203V9.55697H13.4779L8.8112 4.8903L9.9987 3.72363L16.6654 10.3903L9.9987 17.057L8.8112 15.8903L13.4779 11.2236Z"
+                                            fill="#001B44" />
+                                    </svg>
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -254,11 +719,509 @@
             </div>
     </section>
 
+    <!-- credit-history  -->
+    <section class="credit-history p-100">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6">
+                    <div class="text-center text-lg-start">
+                        <h6 class="miltary-mini-head fs-12 fw-bold text-dark">Get Approved</h6>
+                        <h2 class="fs-44 fw-bold text-dark mt-3">Get approved with no credit history.</h2>
+                        <p class="mt-3">AutoProsper's experts will tailor a personal plan to fit your situation. Better
+                            to start sooner than later.</p>
+                        <div class="mt-3">
+                            <a class="green-yello-btn" href="">Learn more
+                                <span>
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4779 11.2236H3.33203V9.55697H13.4779L8.8112 4.8903L9.9987 3.72363L16.6654 10.3903L9.9987 17.057L8.8112 15.8903L13.4779 11.2236Z"
+                                            fill="#001B44" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <img src="assets/img/credit-right-img.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <!-- born-offer  -->
+    <section class="born-offer p-100">
+        <div class="container">
+            <div class="born-main m-auto text-center">
+                <h2 class="fs-44 fw-bold text-center text-white  mt-3"><span class="first-time">First time</span> buyer
+                    (born 1998-2005) program offer
+                </h2>
+                <p class="text-white mt-2">For first-time car buyers born between 1998-2005, unlock exclusive offers and
+                    tailored programs to
+                    ease your vehicle
+                    purchase.</p>
+                <a class="green-yello-btn mt-3" href="">Start Now
+                    <span>
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.4779 11.2236H3.33203V9.55697H13.4779L8.8112 4.8903L9.9987 3.72363L16.6654 10.3903L9.9987 17.057L8.8112 15.8903L13.4779 11.2236Z"
+                                fill="#001B44" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- find make  -->
+    <section class="find-make p-100">
+        <div class="container">
+            <div class="text-center ">
+                <h2 class="fs-44 fw-bold text-dark">Find or make</h2>
+                <p class="find-make-sub mt-2">Whether seeking a rare find or customizing your dream car, trust us for a
+                    personalized,
+                    tailored
+                    automotive experience.</p>
+            </div>
+            <div class="row mt-5 gy-3">
+                <div class="col-lg-6">
+                    <div class="find-card-wrapper bg-white">
+                        <div class="">
+                            <img class="w-100 find-card-img" src="assets/img/find-make-img-1.svg" alt="">
+                        </div>
+                        <div class="find-card-bottom">
+                            <h3 class="fs-32 fw-bold">Discover ideal match</h3>
+                            <p class="mt-3">Undecided on your ideal vehicle? Take a quick quiz to discover the perfect
+                                match tailored
+                                just for you! Let's begin!</p>
+                            <a class="green-yello-btn mt-3" href="">Start Quiz <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                        fill="none">
+                                        <path
+                                            d="M13.4779 11.6152H3.33203V9.94857H13.4779L8.8112 5.2819L9.9987 4.11523L16.6654 10.7819L9.9987 17.4486L8.8112 16.2819L13.4779 11.6152Z"
+                                            fill="#001B44" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="find-card-wrapper bg-white">
+                        <div class="">
+                            <img class="w-100 find-card-img" src="assets/img/find-make-img-2.svg" alt="">
+                        </div>
+                        <div class="find-card-bottom">
+                            <h3 class="fs-32 fw-bold">Special order and customize</h3>
+                            <p class="mt-3">Design your dream car, and watch as we bring it to life. Your perfect
+                                vehicle is just a few steps away!</p>
+                            <a class="green-yello-btn mt-3" href="">Start Order<span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                        fill="none">
+                                        <path
+                                            d="M13.4779 11.6152H3.33203V9.94857H13.4779L8.8112 5.2819L9.9987 4.11523L16.6654 10.7819L9.9987 17.4486L8.8112 16.2819L13.4779 11.6152Z"
+                                            fill="#001B44" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- upgrade-ride  -->
+    <section class="upgrade-ride p-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div>
+                        <img src="assets/img/upgrade-right-img.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="upgrade-bottom text-center text-lg-start">
+                        <h6 class="upgrade-mini-head fs-12 fw-bold text-dark">Seamless Ride Upgrades</h6>
+                        <h2 class="upgrade-head fs-44 fw-bold text-dark mt-3">Upgrade your ride, effortlessly!</h2>
+                        <p class="miltary-sub-head mt-3">Either transform it into your dream ride online or effortlessly
+                            sell for the best offers at home.</p>
+                        <div class="mt-3">
+                            <a class="green-yello-btn" href="">Sell/Trade
+                                <span>
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4779 11.2236H3.33203V9.55697H13.4779L8.8112 4.8903L9.9987 3.72363L16.6654 10.3903L9.9987 17.057L8.8112 15.8903L13.4779 11.2236Z"
+                                            fill="#001B44" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AutoProsper-join  -->
+    <section class="autoprosper-join p-100">
+        <div class="container">
+            <div class="text-center ">
+                <h2 class="join-head fs-44 fw-bold text-dark">What makes AutoProsper worth joining?</h2>
+                <p class="join-sub mt-2">Join AutoProsper for expert guidance, personalized service, & a seamless
+                    car buying experience tailored to your
+                    preferences and needs.</p>
+            </div>
+            <div class="row mt-5 gy-3">
+                <div class="col-lg-4">
+                    <div class="join-cards d-flex flex-column gap-4">
+                        <div>
+                            <img src="assets/img/join-img-1.svg" alt="">
+                        </div>
+                        <h3 class="fs-32 fw-bold">Navigate the
+                            auto maze</h3>
+                        <p>Feeling swamped by choices in today's car market? AutoProsper is your beacon in the haze,
+                            offering a streamlined path to
+                            your perfect ride. We simplify the process, making your decision clear and confident.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="join-cards d-flex flex-column gap-4">
+                        <div>
+                            <img src="assets/img/join-img-2.svg" alt="">
+                        </div>
+                        <h3 class="fs-32 fw-bold">Navigate the
+                            auto maze</h3>
+                        <p>Feeling swamped by choices in today's car market? AutoProsper is your beacon in the haze,
+                            offering a streamlined path to
+                            your perfect ride. We simplify the process, making your decision clear and confident.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="join-cards join-card-unique d-flex flex-column gap-4">
+                        <div>
+                            <img src="assets/img/join-img-3.svg" alt="">
+                        </div>
+                        <h3 class="fs-32 fw-bold">Navigate the
+                            auto maze</h3>
+                        <p>Feeling swamped by choices in today's car market? AutoProsper is your beacon in the haze,
+                            offering a streamlined path to
+                            your perfect ride. We simplify the process, making your decision clear and confident.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- consultancy  -->
+    <section class="consultancy p-100">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-lg-6">
+                    <div class="consultancy-wrapper">
+                        <div class="row gy-3 align-items-center">
+                            <div class="col-lg-4">
+                                <div>
+                                    <img class="w-100" src="assets/img/consultancy-img-1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="text-center text-lg-start">
+                                    <h3 class="fs-32 fw-bold ">Personalized 1:1 Consultancy
+                                    </h3>
+                                    <p class="pt-3">Our dedicated consultants understand that every client is unique,
+                                        with
+                                        distinct needs and
+                                        dreams. We offer bespoke,
+                                        one-on-one guidance, ensuring your car buying experience is as individual as you
+                                        are.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="consultancy-wrapper">
+                        <div class="row align-items-center gy-3">
+                            <div class="col-lg-4">
+                                <div>
+                                    <img class="w-100" src="assets/img/consultancy-img-2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="text-center text-lg-start">
+                                    <h3 class="fs-32 fw-bold">Personalized Steps
+                                        To Growth</h3>
+                                    <p class="pt-3">From understanding your lifestyle to aligning with your budget, our
+                                        experts are committed to finding your perfect
+                                        automotive match. With AutoProsper, experience the ease and confidence of a
+                                        personalized car buying.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- guide-tips  -->
+    <section class="guide-tips p-100">
+        <div class="container">
+            <div class="text-center ">
+                <h2 class="guide-head fs-44 fw-bold text-dark">Guide & Tips</h2>
+                <p class="guide-sub mt-2">Everything you need to know about buying, selling, & maintaining your car.</p>
+            </div>
+            <div>
+                <div class="mt-5 d-block d-lg-none ">
+                    <div class="splide tips-card-1" aria-label="Basic Structure Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="tips-wrapper">
+                                        <div class="tips-img">
+                                            <img class="w-100" src="assets/img/tips-img-1.svg" alt="">
+                                        </div>
+                                        <div class="tips-bottom">
+                                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience
+                                                from start to
+                                                finish.</p>
+                                            <div class="tips-read">
+                                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="tips-wrapper">
+                                        <div class="tips-img">
+                                            <img class="w-100" src="assets/img/tips-img-2.svg" alt="">
+                                        </div>
+                                        <div class="tips-bottom">
+                                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience
+                                                from start to
+                                                finish.</p>
+                                            <div class="tips-read">
+                                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="tips-wrapper">
+                                        <div class="tips-img">
+                                            <img class="w-100" src="assets/img/tips-img-3.svg" alt="">
+                                        </div>
+                                        <div class="tips-bottom">
+                                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience
+                                                from start to
+                                                finish.</p>
+                                            <div class="tips-read">
+                                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="tips-wrapper">
+                                        <div class="tips-img">
+                                            <img class="w-100" src="assets/img/tips-img-4.svg" alt="">
+                                        </div>
+                                        <div class="tips-bottom">
+                                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience
+                                                from start to
+                                                finish.</p>
+                                            <div class="tips-read">
+                                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 d-none d-lg-flex">
+                <div class="col-lg-3">
+                    <div class="tips-wrapper">
+                        <div class="tips-img">
+                            <img class="w-100" src="assets/img/tips-img-1.svg" alt="">
+                        </div>
+                        <div class="tips-bottom">
+                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience from start to
+                                finish.</p>
+                            <div class="tips-read">
+                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tips-wrapper">
+                        <div class="tips-img">
+                            <img class="w-100" src="assets/img/tips-img-2.svg" alt="">
+                        </div>
+                        <div class="tips-bottom">
+                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience from start to
+                                finish.</p>
+                            <div class="tips-read">
+                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tips-wrapper">
+                        <div class="tips-img">
+                            <img class="w-100" src="assets/img/tips-img-3.svg" alt="">
+                        </div>
+                        <div class="tips-bottom">
+                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience from start to
+                                finish.</p>
+                            <div class="tips-read">
+                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tips-wrapper">
+                        <div class="tips-img">
+                            <img class="w-100" src="assets/img/tips-img-4.svg" alt="">
+                        </div>
+                        <div class="tips-bottom">
+                            <h4 class="fs-24 fw-semi-medium">2024 Nissan Kicks®</h4>
+                            <p class="tips-sub-head mt-2">Knowledgeable ensuring seamless experience from start to
+                                finish.</p>
+                            <div class="tips-read">
+                                <a class="text-decoration-underline text-dark-4" href="">Read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a class="green-yello-btn d-inline-flex align-items-center gap-3" href="">Read
+                    more article
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path
+                                d="M13.9779 11.6145H3.83203V9.94784H13.9779L9.3112 5.28117L10.4987 4.1145L17.1654 10.7812L10.4987 17.4478L9.3112 16.2812L13.9779 11.6145Z"
+                                fill="#001B44" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="bg-dark">
+        <div class="container p-100">
+            <div class="row gy-5">
+                <div class="col-lg-2 col-6">
+                    <div>
+                        <h4 class="fs-24-v2 fw-semi-medium text-white">Learn</h4>
+                        <ul class="footer-links d-flex flex-column gap-2 mt-3">
+                            <a href="">Guides & Tips<li></li></a>
+                            <a href="">About AutoProsper<li></li></a>
+                            <a href="">Reviews<li></li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div>
+                        <h4 class="fs-24-v2 fw-semi-medium text-white">Help</h4>
+                        <ul class="footer-links d-flex flex-column gap-2 mt-3">
+                            <a href="">support@autoprosper<li></li></a>
+                            <a href="">(877) 291-2886<li></li></a>
+                            <a href="">Live Chat<li></li></a>
+                            <a href="">Contact<li></li></a>
+                            <a href="">FAQ<li></li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div>
+                        <h4 class="fs-24-v2 fw-semi-medium text-white">Shop</h4>
+                        <ul class="footer-links d-flex flex-column gap-2 mt-3">
+                            <a href="">SUV<li></li></a>
+                            <a href="">Truck<li></li></a>
+                            <a href="">Sedan<li></li></a>
+                            <a href="">Hatchback<li></li></a>
+                            <a href="">Coupe<li></li></a>
+                            <a href="">Wagon<li></li></a>
+                            <a href="">Minivan<li></li></a>
+                            <a href="">Convertible<li></li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div>
+                        <h4 class="fs-24-v2 fw-semi-medium text-white">Finance</h4>
+                        <ul class="footer-links d-flex flex-column gap-2 mt-3">
+                            <a href="">Get Pre-Qualified<li></li></a>
+                            <a href="">Estimate Your Payment<li></li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h4 class="implementation  fw-semi-medium text-white">Social</h4>
+
+                    <div class="d-flex align-item-center gap-3 mt-3">
+                        <div>
+                            <img src="assets/img/fb.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/img/insta.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/img/x.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/img/you.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
 

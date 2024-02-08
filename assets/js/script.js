@@ -1,75 +1,140 @@
-/**
- * @Script js for (Template/Project Name)
- *
- * @project     - Project Name
- * @author      - 
- * @created_by  - Asraful Hoque
- * @created_at  - 
- * @modified_by -
- */
+// ideal-card
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll(".ideal-card-1");
 
-
-/**
- * ========================================================
- * this function execute when window properly loaded
- * ===========================================================
- */
-
-$(window).on('load', function () {
-
-    // code should be execute here
-
-});
-
-
-
-/**
- * ========================================================
- * this function execute when DOM element ready 
- * ===========================================================
- */
-
-$(document).ready(function () {
-
-    // testimonial-active
-    $(function () {
-        if ($('.testimonials-active').length) {
-            $(".testimonials-active").owlCarousel({
-                items: 3,
-                margin: 30,
-                nav: true,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 2500,
-                animateOut: 'fadeOut',
-                smartSpeed: 2500,
-                navText: ["<img src='assets/img/arrow-left.svg' class='img-fluid' />", "<img src='assets/img/arrow-right-s.svg' class='img-fluid' />"],
-                dots: false,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 2
-                    },
-                    1200: {
-                        items: 3
-                    }
-                }
-            });
-        }
-    });
-
-
-
-    // wow js init
-    $(function () {
-        var wow = new WOW({
-            animateClass: 'animated',
-            mobile: true
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 3,
+            perMove: 1,
+            gap: "25px",
+            pagination: true,
+            breakpoints: {
+                1350: {
+                    gap: "20px",
+                },
+                991: {
+                    perPage: 2,
+                    gap: "15px",
+                },
+                586: {
+                    perPage: 1,
+                    gap: "10px",
+                },
+            },
         });
-        wow.init();
-    });
 
+        splide.mount();
+    });
 });
+
+// tips-card
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll(".tips-card-1");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 3,
+            perMove: 1,
+            gap: "25px",
+            pagination: true,
+            breakpoints: {
+                1350: {
+                    gap: "20px",
+                },
+                991: {
+                    perPage: 2,
+                    gap: "15px",
+                },
+                586: {
+                    perPage: 1,
+                    gap: "10px",
+                },
+            },
+        });
+
+        splide.mount();
+    });
+});
+
+// customers-card 
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll(".customers-card-1");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            perPage: 8,
+            // perMove: 1,
+            gap: "10px",
+            pagination: true,
+            autoScroll: {
+                speed: 1,
+            },
+            breakpoints: {
+                1350: {
+                    gap: "20px",
+                },
+                991: {
+                    perPage: 2,
+                    gap: "15px",
+                },
+                586: {
+                    perPage: 3,
+                    gap: "10px",
+                    pagination: false,
+
+                },
+            },
+        });
+
+        splide.mount(window.splide.Extensions);
+    });
+});
+
+
+
+// var splide = new Splide('.splide', {
+//     type: 'loop',
+//     perPage: 2,
+//     perMove: 1,
+//     gap: 15,
+// });
+
+// splide.mount();
+
+/////
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll(".discover-card-1");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            gap: "25px",
+            pagination: true,
+            breakpoints: {
+                1350: {
+                    gap: "20px",
+                },
+                991: {
+                    perPage: 2,
+                    gap: "15px",
+                },
+                586: {
+                    perPage: 2,
+                    gap: "10px",
+                },
+            },
+        });
+
+        splide.mount();
+    });
+});
+
+
+
