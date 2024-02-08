@@ -38,31 +38,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --blue: #2161e0;
-  --aliceblue: #e7efff;
-  --pink: #e93266;
-  --lavender: #ffedf2;
-  --dark: #101044;
-  --eastbay: #54547a;
-  --stormgrey: #6f6f87;
-  --manatee: #8d8dae;
-  --solitude: #e9e9f1;
-  --lavender2: #f2f2fb;
-  --lavender3: #f9f9fe;
-  --skyblue: #219fff;
-  --aliceblue2: #e9f6ff;
-  --green: #17bd8d;
-  --greenlight: #e9fbf6;
-  --yellow: #ffa114;
-  --floralwhite: #fff7eb;
-  --sunsetorange: #ff4e3e;
-  --rose: #ffedec;
-  --lavender4: #e1deff;
-  --columbiablue: #b0ddff;
-  --rose2: #ffe6e4;
-}
-
 /* reset, root - END */
 @media (min-width: 1400px) {
   .container {
@@ -258,14 +233,6 @@ p {
   font-weight: 700;
 }
 
-.box-shadow {
-  box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
-}
-
-.box-shadow2 {
-  box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05);
-}
-
 .radius-10 {
   border-radius: 10px;
 }
@@ -299,6 +266,11 @@ p {
   font-size: 16px;
   font-weight: 700;
   color: #001B44;
+}
+@media (max-height: 575px) {
+  .green-yello-btn {
+    padding: 14px 24px;
+  }
 }
 
 /* helper , base classes  - END*/
@@ -383,6 +355,12 @@ nav .navbar-btn a {
   border: 0;
   width: 262px;
   margin-top: 5px;
+  background-color: transparent;
+}
+@media (max-width: 575px) {
+  .discover .discover-select {
+    width: 230px;
+  }
 }
 .discover .discover-select:focus {
   outline: none;
@@ -497,6 +475,9 @@ nav .navbar-btn a {
   border-radius: 12px;
   box-shadow: 0px 0px 40px -13px rgba(0, 27, 68, 0.25);
   max-height: 500px;
+}
+.ideal-ride .ideal-card .ideal-card-img {
+  max-height: 334px;
 }
 .ideal-ride .ideal-card-logo {
   left: -27px;
