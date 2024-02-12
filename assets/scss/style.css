@@ -863,4 +863,56 @@ footer .copy::after {
 .discount-label input:checked ~ .label-content .red-border {
   opacity: 1;
   visibility: visible;
+}
+
+.accordions .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.accordions .accordion-button:focus {
+  border-color: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.accordions .accordion-item {
+  border: none;
+}
+.accordions .accordion-body {
+  padding-left: 120px;
+}
+.accordions .accordion-button:not(.collapsed) {
+  padding-left: 120px;
+  transition: all 200ms ease-in-out;
+}
+.accordions .accordion-button {
+  position: relative;
+  font-size: 25px;
+}
+.accordions .accordion-button::before {
+  position: absolute;
+  content: "";
+  width: 62px;
+  height: 62px;
+  background-image: url("../img/arrow-up-icon.svg");
+  background-repeat: no-repeat;
+  left: 30px;
+  top: 0px;
+  transition: all 230ms;
+  visibility: visible;
+}
+.accordions .accordion-button.collapsed::before {
+  visibility: hidden;
+  top: 30px;
+  animation-delay: 20ms;
+}
+
+.lightbox .popup-gallery {
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 999;
 }/*# sourceMappingURL=style.css.map */

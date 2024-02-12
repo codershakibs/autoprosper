@@ -1020,3 +1020,80 @@ footer {
         }
     }
 }
+
+
+// accordion 
+.accordions {
+    .accordion-wrapper {
+        // border-bottom: 2px solid red;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+    }
+
+    .accordion-button:focus {
+        border-color: 0;
+        outline: 0;
+        box-shadow: none;
+    }
+
+
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-body {
+        padding-left: 120px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        padding-left: 120px;
+        transition: all 200ms ease-in-out;
+
+    }
+
+    .accordion-button {
+        position: relative;
+        font-size: 25px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 62px;
+            height: 62px;
+            background-image: url('../img/arrow-up-icon.svg');
+            background-repeat: no-repeat;
+            left: 30px;
+            top: 0px;
+            transition: all 230ms;
+            visibility: visible;
+        }
+
+        &.collapsed {
+            &::before {
+                visibility: hidden;
+                top: 30px;
+                animation-delay: 20ms;
+
+            }
+        }
+    }
+
+
+
+}
+
+.lightbox {
+    .popup-gallery {
+        text-align: center;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+}

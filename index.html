@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="assets/css/nioicon.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet">
     <!-- Main CSS -->
@@ -49,11 +50,9 @@
 
 <body>
     <!-- Main Coding Start Here -->
-
-
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="myHeader">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
@@ -65,7 +64,7 @@
                         <circle cx="12" cy="6" r="3" stroke="white" stroke-width="2" />
                     </svg>
                 </span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span>
@@ -74,8 +73,22 @@
                             <rect x="2" y="16" width="20" height="2" fill="white" />
                         </svg>
                     </span>
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="offcanvas-toggle-btn d-block d-lg-none">
+                    <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        aria-controls="offcanvasWithBothOptions">
+                        <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 8.5H21" stroke="#06589C" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1.5 2H21" stroke="#06589C" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1.5 15H21" stroke="#06589C" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-5">
                         <li class="nav-item dropdown">
@@ -204,7 +217,7 @@
     </section>
 
     <!-- discover  -->
-    <section class="discover p-100">
+    <!-- <section class="discover p-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -223,7 +236,7 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <!-- hello  -->
+                    hello 
                     <div class="splide discover-card-1 d-block d-lg-none">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -279,7 +292,7 @@
 
                     <div class="discover-right-col ">
                         <!-- test  -->
-                        <div class="discounts position-relative">
+    <!-- <div class="discounts position-relative">
                             <label class="discount-label d-block" for="discount">
                                 <input type="radio" class="d-none" id="discount">
                                 <div class="label-content">
@@ -298,11 +311,11 @@
                                     <span class="red-border position-absolute start-0 end-0 top-0 bottom-0"></span>
                                 </div>
                             </label>
-                        </div>
+                        </div> -->
 
 
 
-                        <!-- <div
+    <!-- <div
                             class="discover-right-head d-flex align-items-center justify-content-center flex-wrap gap-2 d-none d-lg-flex">
                             <div class="discounts position-relative">
                                 <div class="discount-off position-absolute">
@@ -407,30 +420,15 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
+    <!-- </div>
+
+ -->
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="mt-4 d-flex align-items-center gap-4">
+    <!-- <div class="mt-4 d-flex align-items-center gap-4">
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
@@ -443,10 +441,10 @@
                             matches</a>
                     </div>
                 </div>
-    </section>
+    </section>  -->
 
     <!-- ideal ride  -->
-    <section class="ideal-ride p-100">
+    <!-- <section class="ideal-ride p-100">
         <div class="container">
             <div class="text-center">
                 <h2 class="fs-44 fw-bold text-dark">Unveil Your Ideal Ride</h2>
@@ -657,10 +655,169 @@
 
         </div>
         </div>
+    </section> -->
+
+    <!-- accordion  -->
+
+    <section class="accordions p-100">
+        <div class="container">
+            <h1 class="text-center mb-5">
+                accordion
+            </h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                        What is interaction design?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body mt-3">
+                                        11 Once you sign up for our WordPress development services and sign a
+                                        confidentiality
+                                        agreement, we’ll need the design files (Sketch or PSDs) and detailed
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do you also provide web design services?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Once you sign up for our WordPress development services and sign a confidentiality
+                                    agreement, we’ll need the design files (Sketch or PSDs) and detailed
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How much do you charge for your UX/Ui design services?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    33 Once you sign up for our WordPress development services and sign a
+                                    confidentiality
+                                    agreement, we’ll need the design files (Sketch or PSDs) and detailed
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How much do you charge for your UX/Ui design services?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    33 Once you sign up for our WordPress development services and sign a
+                                    confidentiality
+                                    agreement, we’ll need the design files (Sketch or PSDs) and detailed
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How much do you charge for your UX/Ui design services?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    33 Once you sign up for our WordPress development services and sign a
+                                    confidentiality
+                                    agreement, we’ll need the design files (Sketch or PSDs) and detailed
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- lightbox  -->
+    <section class="lightbox p-100">
+        <div class="container">
+            <h1 class="text-center mb-5">
+                lightbox
+            </h1>
+            <div class="popup-gallery d-flex justify-content-center gap-3">
+                <a href="assets/img/light-1.jpg" title="The Cleaner"><img src="assets/img/light-1.jpg" width="200"
+                        height="200"></a>
+                <a href="assets/img/light-2.jpg" title="The Cleaner"><img src="assets/img/light-2.jpg" width="200"
+                        height="200"></a>
+                <a href="assets/img/light-3.jpg" title="The Cleaner"><img src="assets/img/light-3.jpg" width="200"
+                        height="200"></a>
+                <a href="assets/img/light-4.jpg" title="The Cleaner"><img src="assets/img/light-4.jpg" width="200"
+                        height="200"></a>
+                <a href="assets/img/light-5.jpg" title="The Cleaner"><img src="assets/img/light-5.jpg" width="200"
+                        height="200"></a>
+                <a href="assets/img/light-6.jpg" title="The Cleaner"><img src="assets/img/light-6.jpg" width="200"
+                        height="200"></a>
+                <a href="assets/img/light-7.jpg" title="The Cleaner"><img src="assets/img/light-7.jpg" width="200"
+                        height="200"></a>
+
+
+
+            </div>
+        </div>
     </section>
 
     <!-- prospering-customers  -->
-    <section class="prospering-customers p-100">
+    <!-- <section class="prospering-customers p-100">
         <div class="container">
             <div class="text-center">
                 <h2 class="customers-head fs-44 fw-bold text-white ">Delivery to prospering customers</h2>
@@ -725,10 +882,10 @@
 
 
         </div>
-    </section>
+    </section> -->
 
     <!-- military-offer  -->
-    <section class="military-offer p-100">
+    <!-- <section class="military-offer p-100">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -763,10 +920,10 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section> -->
 
     <!-- credit-history  -->
-    <section class="credit-history p-100">
+    <!-- <section class="credit-history p-100">
         <div class="container">
             <div class="row align-items-center flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
@@ -797,10 +954,10 @@
                 </div>
 
             </div>
-    </section>
+    </section> -->
 
     <!-- born-offer  -->
-    <section class="born-offer p-100">
+    <!-- <section class="born-offer p-100">
         <div class="container">
             <div class="born-main m-auto text-center">
                 <h2 class="fs-44 fw-bold text-center text-white  mt-3"><span class="first-time">First time</span> buyer
@@ -821,10 +978,10 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- find make  -->
-    <section class="find-make p-100">
+    <!-- <section class="find-make p-100">
         <div class="container">
             <div class="text-center ">
                 <h2 class="fs-44 fw-bold text-dark">Find or make</h2>
@@ -881,10 +1038,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- upgrade-ride  -->
-    <section class="upgrade-ride p-100">
+    <!-- <section class="upgrade-ride p-100">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -914,10 +1071,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- AutoProsper-join  -->
-    <section class="autoprosper-join p-100">
+    <!-- <section class="autoprosper-join p-100">
         <div class="container">
             <div class="text-center ">
                 <h2 class="join-head fs-44 fw-bold text-dark">What makes AutoProsper worth joining?</h2>
@@ -964,10 +1121,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- consultancy  -->
-    <section class="consultancy p-100">
+    <!-- <section class="consultancy p-100">
         <div class="container">
             <div class="row align-items-center gy-3">
                 <div class="col-lg-6">
@@ -1024,10 +1181,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- guide-tips  -->
-    <section class="guide-tips p-100">
+    <!-- <section class="guide-tips p-100">
         <div class="container">
             <div class="text-center ">
                 <h2 class="guide-head fs-44 fw-bold text-dark">Guide & Tips</h2>
@@ -1188,7 +1345,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- footer  -->
     <footer class="bg-dark-2">
@@ -1269,12 +1426,30 @@
     </footer>
 
 
+    <!-- Offcanvas -Start -->
+    <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div> -->
+    <!-- Offcanvas -Start -->
+
+
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
     <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
