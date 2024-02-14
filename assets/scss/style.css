@@ -2,7 +2,7 @@
  * @Main scss for (Template/Project Name)
  * @project     - Project Name
  * @author      -
- * @created_by  - Asraful Hoque
+ * @created_by  - Md Shakib
  * @created_at  -
  * @modified_by -
  */
@@ -50,14 +50,14 @@ img {
   height: auto;
 }
 
-p {
+.p2 {
   color: #4B5768;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400px;
 }
 @media (max-width: 575px) {
-  p {
+  .p2 {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -65,20 +65,32 @@ p {
 }
 
 /* helper , base classes */
+.text-primary {
+  color: #00FFA2;
+}
+
 .text-dark {
   color: #001B44;
 }
 
-.bg-dark-2 {
-  color: #001B44;
+.bg-dark {
+  background-color: #001B44;
 }
 
-.bg-dark-2 {
+.bg-light {
+  background-color: #E2FFF5;
+}
+
+.bg-extra-light {
+  background-color: #E9F4F0;
+}
+
+.bg-dark7 {
   background-color: #001B44;
 }
 
 .text-dark-v2 {
-  color: #4B5768;
+  color: #ECEEF1;
 }
 
 .text-dark-2 {
@@ -95,42 +107,34 @@ p {
 
 .fs-13 {
   font-size: 13px;
-  line-height: normal;
 }
 
 .fs-9 {
   font-size: 9px;
-  line-height: normal;
 }
 
 .fs-10 {
   font-size: 10px;
-  line-height: normal;
 }
 
 .fs-12 {
   font-size: 12px;
-  line-height: normal;
 }
 
 .fs-14 {
   font-size: 14px;
-  line-height: 22px;
 }
 
 .fs-14-v2 {
   font-size: 14px;
-  line-height: normal;
 }
 
 .fs-15 {
   font-size: 15px;
-  line-height: 25px;
 }
 
 .fs-16 {
   font-size: 16px;
-  line-height: normal;
 }
 @media (max-width: 575px) {
   .fs-16 {
@@ -141,17 +145,14 @@ p {
 
 .fs-18 {
   font-size: 18px;
-  line-height: normal;
 }
 
 .fs-24 {
   font-size: 24px;
-  line-height: 31px;
 }
 
 .fs-24-v2 {
   font-size: 24px;
-  line-height: 31px;
 }
 @media (max-width: 575px) {
   .fs-24-v2 {
@@ -162,7 +163,6 @@ p {
 
 .fs-24-v3 {
   font-size: 24px;
-  line-height: 31px;
 }
 @media (max-width: 575px) {
   .fs-24-v3 {
@@ -173,7 +173,6 @@ p {
 
 .fs-20 {
   font-size: 20px;
-  line-height: 30px;
 }
 @media (max-width: 575px) {
   .fs-20 {
@@ -185,12 +184,10 @@ p {
 
 .fs-30 {
   font-size: 30px;
-  line-height: 40px;
 }
 
 .fs-32 {
   font-size: 32px;
-  line-height: 41px;
 }
 @media (max-width: 575px) {
   .fs-32 {
@@ -201,12 +198,10 @@ p {
 
 .fs-36 {
   font-size: 36px;
-  line-height: 46px;
 }
 
 .fs-44 {
   font-size: 44px;
-  line-height: 57px;
 }
 @media (max-width: 575px) {
   .fs-44 {
@@ -218,12 +213,10 @@ p {
 
 .fs-54 {
   font-size: 54px;
-  line-height: 3.37rem;
 }
 
 .fs-56 {
   font-size: 56px;
-  line-height: 72px;
 }
 @media (max-width: 575px) {
   .fs-56 {
@@ -253,8 +246,24 @@ p {
   border-radius: 10px;
 }
 
+.radius-12 {
+  border-radius: 12px;
+}
+
 .radius-16 {
   border-radius: 16px;
+}
+
+.radius-96 {
+  border-radius: 96px;
+}
+
+.radius-4 {
+  border-radius: 4px;
+}
+
+.radius-500 {
+  border-radius: 500px;
 }
 
 .radius-100 {
@@ -266,12 +275,60 @@ p {
 }
 
 .p-100 {
-  padding: 96px 0;
+  padding: 100px 0;
 }
 @media (max-width: 575px) {
   .p-100 {
     padding: 100px 0;
   }
+}
+
+.lh-23 {
+  line-height: 23.4px;
+}
+
+.lh-18 {
+  line-height: 18px;
+}
+
+.lh-15 {
+  line-height: 15px;
+}
+
+.lh-21 {
+  line-height: 21px;
+}
+
+.lh-31 {
+  line-height: 31px;
+}
+
+.lh-22 {
+  line-height: 22px;
+}
+
+.lh-25 {
+  line-height: 25px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.lh-40 {
+  line-height: 40px;
+}
+
+.lh-41 {
+  line-height: 41px;
+}
+
+.lh-46 {
+  line-height: 46px;
+}
+
+.lh-57 {
+  line-height: 57px;
 }
 
 .green-yello-btn {
@@ -289,13 +346,40 @@ p {
   }
 }
 
+.warm-btn {
+  padding: 5px 10px;
+  border-radius: 100px;
+  background: #001B44;
+}
+
+.warm-white-btn {
+  padding: 5px 10px;
+  border-radius: 100px;
+  background: #FFF;
+}
+
+.task-btn {
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%);
+}
+
+.task-dark-btn {
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #ECEEF1;
+}
+
+.refresh-btn {
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #ECEEF1;
+}
+
 /* helper , base classes  - END*/
 nav .navbar-btn {
   background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%) !important;
   padding: 13px 20px;
-}
-nav .navbar-btn a {
-  color: #001B44 !important;
 }
 @media (max-width: 575px) {
   nav .navbar-toggler-icon {
@@ -724,207 +808,4 @@ footer .copy::after {
   width: 1px;
   background-color: #97A5C1;
   right: -24px;
-}
-
-.checkbox-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.checkbox-group > * {
-  margin: 0.5rem 0.5rem;
-}
-
-.checkbox-group-legend {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #9c9c9c;
-  text-align: center;
-  line-height: 1.125;
-  margin-bottom: 1.25rem;
-}
-
-.checkbox-input {
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-.checkbox-input:checked + .checkbox-tile {
-  border-color: #2260ff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  color: #2260ff;
-}
-.checkbox-input:checked + .checkbox-tile:before {
-  transform: scale(1);
-  opacity: 1;
-  background-color: #2260ff;
-  border-color: #2260ff;
-}
-.checkbox-input:checked + .checkbox-tile .checkbox-icon,
-.checkbox-input:checked + .checkbox-tile .checkbox-label {
-  color: #2260ff;
-}
-.checkbox-input:focus + .checkbox-tile {
-  border-color: #2260ff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
-}
-.checkbox-input:focus + .checkbox-tile:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.checkbox-tile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 7rem;
-  min-height: 7rem;
-  border-radius: 0.5rem;
-  border: 2px solid #b5bfd9;
-  background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: 0.15s ease;
-  cursor: pointer;
-  position: relative;
-}
-.checkbox-tile:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1.25rem;
-  height: 1.25rem;
-  border: 2px solid #b5bfd9;
-  background-color: #fff;
-  border-radius: 50%;
-  top: 0.25rem;
-  left: 0.25rem;
-  opacity: 0;
-  transform: scale(0);
-  transition: 0.25s ease;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%23FFFFFF' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72.005 104 184 48 128.005' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'%3E%3C/polyline%3E%3C/svg%3E");
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-.checkbox-tile:hover {
-  border-color: #2260ff;
-}
-.checkbox-tile:hover:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.checkbox-icon {
-  transition: 0.375s ease;
-  color: #494949;
-}
-.checkbox-icon svg {
-  width: 3rem;
-  height: 3rem;
-}
-
-.checkbox-label {
-  color: #707070;
-  transition: 0.375s ease;
-  text-align: center;
-}
-
-.checkbox-tile {
-  padding: 47px 70px;
-}
-
-.checkbox-head {
-  color: #8E97A6;
-  font-size: 9px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.red-border {
-  border: 1px solid red;
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.discount-label input:checked ~ .label-content .red-border {
-  opacity: 1;
-  visibility: visible;
-}
-
-.accordions .accordion-button:not(.collapsed) {
-  background-color: transparent;
-}
-.accordions .accordion-button:focus {
-  border-color: 0;
-  outline: 0;
-  box-shadow: none;
-}
-.accordions .accordion-item {
-  border: none;
-}
-.accordions .accordion-body {
-  padding-left: 120px;
-}
-.accordions .accordion-button:not(.collapsed) {
-  padding-left: 120px;
-  transition: all 200ms ease-in-out;
-}
-.accordions .accordion-button {
-  position: relative;
-  font-size: 25px;
-}
-.accordions .accordion-button::before {
-  position: absolute;
-  content: "";
-  width: 62px;
-  height: 62px;
-  background-image: url("../img/arrow-up-icon.svg");
-  background-repeat: no-repeat;
-  left: 30px;
-  top: 0px;
-  transition: all 120ms;
-  visibility: visible;
-}
-.accordions .accordion-button.collapsed::before {
-  visibility: hidden;
-  top: 30px;
-}
-
-.lightbox .popup-gallery {
-  text-align: center;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: black;
-  z-index: 999;
-}
-
-.offcanvas-body {
-  background-color: black;
-}
-
-#offcanvas-btn {
-  background-color: transparent !important;
-  border: 0;
-}
-
-.nav-item {
-  list-style: none;
 }/*# sourceMappingURL=style.css.map */
