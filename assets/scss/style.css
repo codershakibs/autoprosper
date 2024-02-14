@@ -808,4 +808,8 @@ footer .copy::after {
   width: 1px;
   background-color: #97A5C1;
   right: -24px;
+}
+
+.dashboard-wrapper {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
