@@ -896,13 +896,12 @@ footer .copy::after {
   background-repeat: no-repeat;
   left: 30px;
   top: 0px;
-  transition: all 230ms;
+  transition: all 120ms;
   visibility: visible;
 }
 .accordions .accordion-button.collapsed::before {
   visibility: hidden;
   top: 30px;
-  animation-delay: 20ms;
 }
 
 .lightbox .popup-gallery {
@@ -915,4 +914,17 @@ footer .copy::after {
   width: 100%;
   background-color: black;
   z-index: 999;
+}
+
+.offcanvas-body {
+  background-color: black;
+}
+
+#offcanvas-btn {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.nav-item {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
