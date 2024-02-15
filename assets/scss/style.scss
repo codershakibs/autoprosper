@@ -77,6 +77,12 @@ img {
 
 }
 
+select {
+    &:focus {
+        outline: none;
+    }
+}
+
 /* helper , base classes */
 
 // text-color
@@ -973,6 +979,7 @@ footer {
 .dashboard-wrapper {
     background-color: #F0F4F3;
 
+    //* appointment start 
     .appointment-wrapper {
         min-height: 548px;
         padding: 24px 30px 16px 16px;
@@ -1043,6 +1050,9 @@ footer {
 
     }
 
+    // appointment end 
+
+    //* email start 
     .email-sms-wrapper {
         margin-top: 12px;
         padding: 24px 28px 16px 16px;
@@ -1079,6 +1089,9 @@ footer {
 
     }
 
+    // email end 
+
+    //* sales start 
 
     .sales-wrapper {
         padding: 24px 16px;
@@ -1091,6 +1104,10 @@ footer {
         }
     }
 
+    // sales end 
+
+    //* filter start 
+
     .filter-wrapper {
         padding: 22px 16px 24px 16px;
         background-color: #FFF;
@@ -1098,7 +1115,7 @@ footer {
         margin-top: 12px;
 
         .filter-select {
-            width: 22px;
+            min-width: 240px;
             border: 0;
         }
 
@@ -1126,6 +1143,10 @@ footer {
         }
     }
 
+    //* filter end 
+
+
+    //* chat start 
 
     .chat-wrapper {
         background-color: #FFF;
@@ -1183,6 +1204,10 @@ footer {
 
     }
 
+    // chat end 
+
+    //* Appointer start 
+
     .Appointer-wrapper {
         background-color: #FFF;
         padding: 24px;
@@ -1239,6 +1264,10 @@ footer {
 
     }
 
+    // Appointer end
+
+    //* main-middle start 
+
     .main-middle-wrapper {
         padding: 44px 25px 25px 25px;
         background-color: #FFF;
@@ -1268,6 +1297,32 @@ footer {
 
         .weather-wrapper {
             margin-top: 16px;
+
+            .weather-unique {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 64px;
+                    width: 1px;
+                    top: 0;
+                    left: -178px;
+                    top: 10px;
+                    background-color: #B7BCC3;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 64px;
+                    width: 1px;
+                    top: 0;
+                    right: -178px;
+                    top: 10px;
+                    background-color: #B7BCC3;
+                }
+            }
 
             .weather-sub {
                 margin-top: 5px;
@@ -1301,6 +1356,10 @@ footer {
 
     }
 
+    // main-middle end
+
+
+    //* main-bottome start 
 
     .main-bottom-wrapper {
         background-color: #FFF;
@@ -1311,6 +1370,20 @@ footer {
         .bottom-cards {
             padding-bottom: 20px;
             border-bottom: 1px solid #B7BCC3;
+
+            .min-unique {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 6px;
+                    left: -14px;
+                    top: 7px;
+                    background-image: url('data:image/svg+xml,<svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="3" r="2.5" fill="%234B5768"/></svg>');
+                }
+            }
         }
 
         .bottom-cards-unique {
@@ -1336,6 +1409,10 @@ footer {
         }
 
     }
+
+    // main-bottome end 
+
+    //* dealerplex start 
 
     .dealerplex-wrapper {
         padding: 24px 16px;
@@ -1390,9 +1467,77 @@ footer {
 
     }
 
+    // dealerplex end 
+
+    //* january start 
+
+    .january-wrapper {
+        padding: 24px 16px;
+        background-color: #FFF;
+        margin-top: 12px;
+
+        .january-divider {
+            background-color: #B7BCC3;
+            width: 100%;
+            height: 1px;
+            margin-block: 16px;
+        }
+
+
+        .funds-wrapper {
+            .fund-unique {
+                border-left: 0 !important;
+            }
+
+
+
+            .fund {
+                padding-left: 24px;
+                padding-bottom: 45px;
+                border-left: 2px dotted black;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../img/funds-icon-1.svg);
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                    left: -8px;
+                    top: 0px;
+                }
+
+                .fund-card-sub {
+                    margin-bottom: 8px;
+                }
+
+                .fund-card-sub2 {
+                    margin-bottom: 15px;
+                }
+
+
+                .fund-icon {
+                    gap: 9px;
+                }
+            }
+
+        }
+
+
+
+
+
+    }
+
+    // january end
+
+
 
 
 
 
 
 }
+
+//******* dashboard css end******\\

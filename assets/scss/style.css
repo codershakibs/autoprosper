@@ -64,6 +64,10 @@ img {
   }
 }
 
+select:focus {
+  outline: none;
+}
+
 /* helper , base classes */
 .text-primary {
   color: #00FFA2;
@@ -923,7 +927,7 @@ footer .copy::after {
   margin-top: 12px;
 }
 .dashboard-wrapper .filter-wrapper .filter-select {
-  width: 22px;
+  min-width: 240px;
   border: 0;
 }
 .dashboard-wrapper .filter-wrapper .divider-2 {
@@ -1045,6 +1049,29 @@ footer .copy::after {
 .dashboard-wrapper .main-middle-wrapper .weather-wrapper {
   margin-top: 16px;
 }
+.dashboard-wrapper .main-middle-wrapper .weather-wrapper .weather-unique {
+  position: relative;
+}
+.dashboard-wrapper .main-middle-wrapper .weather-wrapper .weather-unique::before {
+  content: "";
+  position: absolute;
+  height: 64px;
+  width: 1px;
+  top: 0;
+  left: -178px;
+  top: 10px;
+  background-color: #B7BCC3;
+}
+.dashboard-wrapper .main-middle-wrapper .weather-wrapper .weather-unique::after {
+  content: "";
+  position: absolute;
+  height: 64px;
+  width: 1px;
+  top: 0;
+  right: -178px;
+  top: 10px;
+  background-color: #B7BCC3;
+}
 .dashboard-wrapper .main-middle-wrapper .weather-wrapper .weather-sub {
   margin-top: 5px;
 }
@@ -1073,6 +1100,18 @@ footer .copy::after {
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards {
   padding-bottom: 20px;
   border-bottom: 1px solid #B7BCC3;
+}
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards .min-unique {
+  position: relative;
+}
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards .min-unique::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 6px;
+  left: -14px;
+  top: 7px;
+  background-image: url('data:image/svg+xml,<svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="3" r="2.5" fill="%234B5768"/></svg>');
 }
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards-unique {
   border-bottom: none;
@@ -1125,4 +1164,43 @@ footer .copy::after {
   padding: 10px 70.5px;
   border: 0;
   opacity: 0.4;
+}
+.dashboard-wrapper .january-wrapper {
+  padding: 24px 16px;
+  background-color: #FFF;
+  margin-top: 12px;
+}
+.dashboard-wrapper .january-wrapper .january-divider {
+  background-color: #B7BCC3;
+  width: 100%;
+  height: 1px;
+  margin-block: 16px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund-unique {
+  border-left: 0 !important;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund {
+  padding-left: 24px;
+  padding-bottom: 45px;
+  border-left: 2px dotted black;
+  position: relative;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/funds-icon-1.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  left: -8px;
+  top: 0px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-card-sub {
+  margin-bottom: 8px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-card-sub2 {
+  margin-bottom: 15px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-icon {
+  gap: 9px;
 }/*# sourceMappingURL=style.css.map */
