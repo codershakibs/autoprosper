@@ -78,7 +78,7 @@ img {
 }
 
 .bg-light {
-  background-color: #E2FFF5;
+  background-color: #E2FFF5 !important;
 }
 
 .bg-extra-light {
@@ -226,6 +226,10 @@ img {
   }
 }
 
+.fw-small {
+  font-weight: 400;
+}
+
 .fw-medium {
   font-weight: 500;
 }
@@ -350,12 +354,27 @@ img {
   padding: 5px 10px;
   border-radius: 100px;
   background: #001B44;
+  border: 1px solid #4B5768;
+}
+.warm-btn:hover {
+  background-color: transparent;
+  border: 1px solid #4B5768;
+  border-radius: 100px;
+  color: #4B5768 !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .warm-white-btn {
   padding: 5px 10px;
   border-radius: 100px;
   background: #FFF;
+  border-radius: 100px;
+  border: 1px solid #4B5768;
+}
+.warm-white-btn:hover {
+  background-color: #001B44;
+  color: #FFF;
+  transition: all 0.5s ease-in-out;
 }
 
 .task-btn {
@@ -811,5 +830,299 @@ footer .copy::after {
 }
 
 .dashboard-wrapper {
+  background-color: #F0F4F3;
+}
+.dashboard-wrapper .appointment-wrapper {
+  min-height: 548px;
+  padding: 24px 30px 16px 16px;
+  background-color: #FFF;
+}
+.dashboard-wrapper .appointment-wrapper .Progress {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 4px 8px;
+  background-color: #FFA114;
+  display: inline-block;
+  color: #FFF;
+}
+.dashboard-wrapper .appointment-wrapper .wade-name {
+  margin-bottom: 16px;
+}
+.dashboard-wrapper .appointment-wrapper .wade-contact {
+  margin-bottom: 12px;
+}
+.dashboard-wrapper .appointment-wrapper .TOYOTA-CAMRY {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.dashboard-wrapper .appointment-wrapper .TOYOTA-CAMRY .toyota {
+  margin-bottom: 12px;
+}
+.dashboard-wrapper .appointment-wrapper .TOYOTA-CAMRY .appoint-btn1,
+.dashboard-wrapper .appointment-wrapper .TOYOTA-CAMRY .appoint-btn2 {
+  padding: 5px 10px;
+}
+.dashboard-wrapper .appointment-wrapper .appoint-btns {
+  gap: 8px;
+}
+.dashboard-wrapper .appointment-wrapper .appoint-btns .appoint-btn2 {
+  border: 1px solid #4B5768;
+}
+.dashboard-wrapper .appointment-wrapper .appoint-btns .appoint-btn1 {
+  border: 1px solid #4B5768;
+}
+.dashboard-wrapper .appointment-wrapper .appoint-btns .appoint-btn1:hover {
+  background-color: transparent;
+  border: 1px solid #4B5768;
+  border-radius: 100px;
+  color: #4B5768 !important;
+}
+.dashboard-wrapper .appointment-wrapper .divider {
+  background-color: #B7BCC3;
+  width: 100%;
+  height: 1px;
+}
+.dashboard-wrapper .appointment-wrapper .date-arrows {
+  margin-bottom: 30px;
+}
+.dashboard-wrapper .email-sms-wrapper {
+  margin-top: 12px;
+  padding: 24px 28px 16px 16px;
+  min-height: 862px;
+}
+.dashboard-wrapper .email-sms-wrapper .sub-email:hover {
   background-color: red;
+}
+.dashboard-wrapper .email-sms-wrapper .email-details {
+  margin-top: 32px;
+  padding: 16px 0 22px 0;
+  border-bottom: 1px solid #B7BCC3;
+}
+.dashboard-wrapper .email-sms-wrapper .email-details .details {
+  margin-bottom: 11px;
+}
+.dashboard-wrapper .email-sms-wrapper .email-details .details-btns {
+  margin-top: 12px;
+}
+.dashboard-wrapper .email-sms-wrapper .email-last-btn {
+  padding: 10px 97px;
+  margin-top: 17px;
+}
+.dashboard-wrapper .sales-wrapper {
+  padding: 24px 16px;
+  background-color: #FFF;
+  min-height: 411px;
+}
+.dashboard-wrapper .sales-wrapper .activities {
+  padding: 5px 16px 5px 5px;
+}
+.dashboard-wrapper .filter-wrapper {
+  padding: 22px 16px 24px 16px;
+  background-color: #FFF;
+  min-height: 215px;
+  margin-top: 12px;
+}
+.dashboard-wrapper .filter-wrapper .filter-select {
+  width: 22px;
+  border: 0;
+}
+.dashboard-wrapper .filter-wrapper .divider-2 {
+  margin-block: 21px 16px;
+  background-color: #B7BCC3;
+  width: 100%;
+  height: 1px;
+}
+.dashboard-wrapper .filter-wrapper .filter-select2 {
+  width: 213px;
+  border: 0;
+}
+.dashboard-wrapper .filter-wrapper .date-filter {
+  padding: 12px 24px 15px 24px;
+  border: 1px solid #B7BCC3;
+}
+.dashboard-wrapper .filter-wrapper .filter-dates {
+  margin-top: 16px;
+}
+.dashboard-wrapper .chat-wrapper {
+  background-color: #FFF;
+  padding: 104px 16px 16px 16px;
+  margin-top: 12px;
+  min-height: 772px;
+}
+.dashboard-wrapper .chat-wrapper .chat-head {
+  background-image: url(../img/chat-head-bg.svg);
+  background-repeat: no-repeat;
+  padding: 9px 42px 19px 48px;
+  background-position: center;
+}
+.dashboard-wrapper .chat-wrapper .chats {
+  margin-top: 110px;
+  gap: 8px;
+  margin-top: 267px;
+}
+.dashboard-wrapper .chat-wrapper .chats .chat {
+  padding: 8px 28px 10px 16px;
+}
+.dashboard-wrapper .chat-wrapper .chats .chat .chat-body {
+  margin-bottom: 7px;
+}
+.dashboard-wrapper .chat-wrapper .chat-input-wrapper {
+  margin-top: 12px;
+}
+.dashboard-wrapper .chat-wrapper .chat-input-wrapper .chat-input {
+  min-width: 164px;
+  border: 0;
+}
+.dashboard-wrapper .chat-wrapper .chat-input-wrapper .chat-input:focus {
+  outline: none;
+}
+.dashboard-wrapper .chat-wrapper .chat-input-wrapper .chat-main {
+  padding: 17px;
+  border: 1px solid #8E97A6;
+}
+.dashboard-wrapper .chat-wrapper .chat-btn {
+  margin-top: 12px;
+}
+.dashboard-wrapper .Appointer-wrapper {
+  background-color: #FFF;
+  padding: 24px;
+  gap: 160px;
+}
+.dashboard-wrapper .Appointer-wrapper .points .pointers {
+  gap: 38px;
+}
+.dashboard-wrapper .Appointer-wrapper .points .main-points {
+  margin-top: 27px;
+}
+.dashboard-wrapper .Appointer-wrapper .points .point-head {
+  padding: 32px 95px;
+  background-color: #E2FFF5;
+}
+.dashboard-wrapper .Appointer-wrapper .points .point-sub {
+  margin-top: 10px;
+}
+.dashboard-wrapper .Appointer-wrapper .right-col .sale-body-wrapper {
+  gap: 24px;
+}
+.dashboard-wrapper .Appointer-wrapper .right-col .right-col-sub {
+  margin-top: 38px;
+}
+.dashboard-wrapper .Appointer-wrapper .right-col .day-wrapper {
+  gap: 24px;
+}
+.dashboard-wrapper .Appointer-wrapper .right-col .day {
+  gap: 12px;
+}
+.dashboard-wrapper .Appointer-wrapper .right-col .day-head {
+  margin-bottom: 5px;
+}
+.dashboard-wrapper .Appointer-wrapper .right-col .sale-head {
+  margin-bottom: 24px;
+}
+.dashboard-wrapper .main-middle-wrapper {
+  padding: 44px 25px 25px 25px;
+  background-color: #FFF;
+  margin-top: 24px;
+}
+.dashboard-wrapper .main-middle-wrapper .main-input .main-middle-input {
+  padding: 17px 0 17px 30px;
+  background-image: url(../img/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: 8px 20px;
+  border: 1px solid #8E97A6;
+}
+.dashboard-wrapper .main-middle-wrapper .main-input .main-middle-input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+}
+.dashboard-wrapper .main-middle-wrapper .main-input .main-middle-input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+}
+.dashboard-wrapper .main-middle-wrapper .main-input .main-middle-input:focus {
+  outline: none;
+}
+.dashboard-wrapper .main-middle-wrapper .weather-wrapper {
+  margin-top: 16px;
+}
+.dashboard-wrapper .main-middle-wrapper .weather-wrapper .weather-sub {
+  margin-top: 5px;
+}
+.dashboard-wrapper .main-middle-wrapper .form-element input {
+  display: none;
+}
+.dashboard-wrapper .main-middle-wrapper .form-element label {
+  border-radius: 96px;
+  border: 2px solid #E5E8ED;
+  transition: all 230ms linear;
+  padding: 9px 18px;
+  cursor: pointer;
+}
+.dashboard-wrapper .main-middle-wrapper input:checked + label {
+  background-color: #001B44;
+}
+.dashboard-wrapper .main-middle-wrapper input:checked + label h5 {
+  color: #FFF;
+}
+.dashboard-wrapper .main-bottom-wrapper {
+  background-color: #FFF;
+  margin-top: 12px;
+  padding: 10px 24px 10px 10px;
+  gap: 20px;
+}
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #B7BCC3;
+}
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards-unique {
+  border-bottom: none;
+}
+.dashboard-wrapper .main-bottom-wrapper .cards {
+  gap: 24px;
+}
+.dashboard-wrapper .main-bottom-wrapper .card-select {
+  padding: 18px 18px;
+  border: 1px solid #8E97A6;
+  border-radius: 12px;
+}
+.dashboard-wrapper .main-bottom-wrapper .card-select .cards-select {
+  width: 250px;
+}
+.dashboard-wrapper .main-bottom-wrapper .card-btn1 {
+  color: #FFF;
+}
+.dashboard-wrapper .dealerplex-wrapper {
+  padding: 24px 16px;
+  background-color: #FFF;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper {
+  margin-top: 16px;
+  padding: 16px 12px 26px 12px;
+  background-color: #E2FFF5;
+  margin-bottom: 12px;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs {
+  gap: 8px;
+  margin-top: 16px;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs .form-element input {
+  display: none;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs .form-element label {
+  border-radius: 4px;
+  border: 1px solid #B7BCC3;
+  transition: all 230ms linear;
+  padding: 8px;
+  cursor: pointer;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs input:checked + label {
+  background-color: #001B44;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs input:checked + label svg * {
+  fill: white;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-btn {
+  padding: 10px 70.5px;
+  border: 0;
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */
