@@ -390,9 +390,10 @@ select {
 .warm-white-btn {
     padding: 5px 10px;
     border-radius: 100px;
-    background: #FFF;
+    background: transparent;
     border-radius: 100px;
     border: 1px solid #4B5768;
+
 
 
     &:hover {
@@ -1064,10 +1065,7 @@ footer {
         // padding: 24px 28px 16px 16px;
         min-height: 862px;
 
-        .email-details-wrapper {
-            gap: 38px;
 
-        }
 
 
         .email-head {
@@ -1081,8 +1079,12 @@ footer {
         }
 
         .email-details {
-            padding: 16px 16px 22px 16px;
+            padding: 45px 16px 22px 16px;
             border-bottom: 1px solid #B7BCC3;
+
+            &:hover {
+                background-color: #00FFA2;
+            }
 
 
             .details {
@@ -1098,6 +1100,7 @@ footer {
         .email-last-btn {
             padding: 10px 97px;
             margin-top: 17px;
+            margin-bottom: 19px;
 
         }
 
@@ -1319,7 +1322,7 @@ footer {
         }
 
         .weather-wrapper {
-            margin-top: 16px;
+            margin-top: 37px;
 
             .weather-unique {
                 position: relative;
@@ -1387,12 +1390,11 @@ footer {
     .main-bottom-wrapper {
         background-color: #FFF;
         margin-top: 12px;
-        padding: 10px 24px 10px 10px;
         gap: 20px;
 
 
         .bottom-cards {
-            padding-bottom: 20px;
+            padding: 10px 24px 10px 10px;
             border-bottom: 1px solid #B7BCC3;
 
             &:last-child {

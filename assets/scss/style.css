@@ -371,7 +371,7 @@ select:focus {
 .warm-white-btn {
   padding: 5px 10px;
   border-radius: 100px;
-  background: #FFF;
+  background: transparent;
   border-radius: 100px;
   border: 1px solid #4B5768;
 }
@@ -896,9 +896,6 @@ footer .copy::after {
   margin-top: 12px;
   min-height: 862px;
 }
-.dashboard-wrapper .email-sms-wrapper .email-details-wrapper {
-  gap: 38px;
-}
 .dashboard-wrapper .email-sms-wrapper .email-head {
   padding: 24px 16px 16px 16px;
 }
@@ -906,8 +903,11 @@ footer .copy::after {
   background-color: red;
 }
 .dashboard-wrapper .email-sms-wrapper .email-details {
-  padding: 16px 16px 22px 16px;
+  padding: 45px 16px 22px 16px;
   border-bottom: 1px solid #B7BCC3;
+}
+.dashboard-wrapper .email-sms-wrapper .email-details:hover {
+  background-color: #00FFA2;
 }
 .dashboard-wrapper .email-sms-wrapper .email-details .details {
   margin-bottom: 11px;
@@ -918,6 +918,7 @@ footer .copy::after {
 .dashboard-wrapper .email-sms-wrapper .email-last-btn {
   padding: 10px 97px;
   margin-top: 17px;
+  margin-bottom: 19px;
 }
 .dashboard-wrapper .sales-wrapper {
   padding: 24px 16px;
@@ -1059,7 +1060,7 @@ footer .copy::after {
   outline: none;
 }
 .dashboard-wrapper .main-middle-wrapper .weather-wrapper {
-  margin-top: 16px;
+  margin-top: 37px;
 }
 .dashboard-wrapper .main-middle-wrapper .weather-wrapper .weather-unique {
   position: relative;
@@ -1106,11 +1107,10 @@ footer .copy::after {
 .dashboard-wrapper .main-bottom-wrapper {
   background-color: #FFF;
   margin-top: 12px;
-  padding: 10px 24px 10px 10px;
   gap: 20px;
 }
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards {
-  padding-bottom: 20px;
+  padding: 10px 24px 10px 10px;
   border-bottom: 1px solid #B7BCC3;
 }
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards:last-child {
