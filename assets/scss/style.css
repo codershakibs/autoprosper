@@ -1100,6 +1100,7 @@ footer .copy::after {
 }
 .dashboard-wrapper .main-middle-wrapper input:checked + label {
   background-color: #001B44;
+  border: 2px solid transparent;
 }
 .dashboard-wrapper .main-middle-wrapper input:checked + label h5 {
   color: #FFF;
@@ -1168,9 +1169,11 @@ footer .copy::after {
 .dashboard-wrapper .dealerplex-wrapper .bank-wrapper .jst-minutes {
   display: none;
 }
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox {
+  margin-top: 17px;
+}
 .dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs {
   gap: 8px;
-  margin-top: 16px;
 }
 .dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs .form-element input {
   display: none;
