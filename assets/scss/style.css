@@ -386,6 +386,9 @@ select:focus {
   border-radius: 100px;
   background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%);
 }
+.task-btn:hover {
+  background: #ECEEF1;
+}
 
 .task-dark-btn {
   padding: 10px 20px;
@@ -891,15 +894,19 @@ footer .copy::after {
 }
 .dashboard-wrapper .email-sms-wrapper {
   margin-top: 12px;
-  padding: 24px 28px 16px 16px;
   min-height: 862px;
+}
+.dashboard-wrapper .email-sms-wrapper .email-details-wrapper {
+  gap: 38px;
+}
+.dashboard-wrapper .email-sms-wrapper .email-head {
+  padding: 24px 16px 16px 16px;
 }
 .dashboard-wrapper .email-sms-wrapper .sub-email:hover {
   background-color: red;
 }
 .dashboard-wrapper .email-sms-wrapper .email-details {
-  margin-top: 32px;
-  padding: 16px 0 22px 0;
+  padding: 16px 16px 22px 16px;
   border-bottom: 1px solid #B7BCC3;
 }
 .dashboard-wrapper .email-sms-wrapper .email-details .details {
@@ -929,6 +936,7 @@ footer .copy::after {
 .dashboard-wrapper .filter-wrapper .filter-select {
   min-width: 240px;
   border: 0;
+  cursor: pointer;
 }
 .dashboard-wrapper .filter-wrapper .divider-2 {
   margin-block: 21px 16px;
@@ -939,6 +947,7 @@ footer .copy::after {
 .dashboard-wrapper .filter-wrapper .filter-select2 {
   width: 213px;
   border: 0;
+  cursor: pointer;
 }
 .dashboard-wrapper .filter-wrapper .date-filter {
   padding: 12px 24px 15px 24px;
@@ -987,6 +996,9 @@ footer .copy::after {
 .dashboard-wrapper .chat-wrapper .chat-btn {
   margin-top: 12px;
 }
+.dashboard-wrapper .chat-wrapper .cursor-ditect {
+  cursor: pointer;
+}
 .dashboard-wrapper .Appointer-wrapper {
   background-color: #FFF;
   padding: 24px;
@@ -1029,10 +1041,10 @@ footer .copy::after {
   margin-top: 24px;
 }
 .dashboard-wrapper .main-middle-wrapper .main-input .main-middle-input {
-  padding: 17px 0 17px 30px;
+  padding: 17px 0 17px 44px;
   background-image: url(../img/search-icon.png);
   background-repeat: no-repeat;
-  background-position: 8px 20px;
+  background-position: left 18px top 50%;
   border: 1px solid #8E97A6;
 }
 .dashboard-wrapper .main-middle-wrapper .main-input .main-middle-input::-moz-placeholder {
@@ -1101,6 +1113,9 @@ footer .copy::after {
   padding-bottom: 20px;
   border-bottom: 1px solid #B7BCC3;
 }
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards:last-child {
+  border-bottom: 0;
+}
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards .min-unique {
   position: relative;
 }
@@ -1120,12 +1135,14 @@ footer .copy::after {
   gap: 24px;
 }
 .dashboard-wrapper .main-bottom-wrapper .card-select {
-  padding: 18px 18px;
+  padding: 11px 18px;
   border: 1px solid #8E97A6;
   border-radius: 12px;
+  max-height: 72px;
 }
 .dashboard-wrapper .main-bottom-wrapper .card-select .cards-select {
   width: 250px;
+  cursor: pointer;
 }
 .dashboard-wrapper .main-bottom-wrapper .card-btn1 {
   color: #FFF;
@@ -1139,6 +1156,17 @@ footer .copy::after {
   padding: 16px 12px 26px 12px;
   background-color: #E2FFF5;
   margin-bottom: 12px;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .jst-minutes,
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .jst-hours,
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .jst-seconds {
+  color: red !important;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-wrapper .jst-minutes {
+  display: none;
 }
 .dashboard-wrapper .dealerplex-wrapper .bank-wrapper .bank-checkbox .bank-checkboxs {
   gap: 8px;
@@ -1165,42 +1193,121 @@ footer .copy::after {
   border: 0;
   opacity: 0.4;
 }
-.dashboard-wrapper .january-wrapper {
+.dashboard-wrapper .january-wrapper,
+.dashboard-wrapper .january-wrapper-2,
+.dashboard-wrapper .january-wrapper-2 {
   padding: 24px 16px;
   background-color: #FFF;
   margin-top: 12px;
 }
-.dashboard-wrapper .january-wrapper .january-divider {
+.dashboard-wrapper .january-wrapper .january-divider,
+.dashboard-wrapper .january-wrapper-2 .january-divider,
+.dashboard-wrapper .january-wrapper-2 .january-divider {
   background-color: #B7BCC3;
   width: 100%;
   height: 1px;
   margin-block: 16px;
 }
-.dashboard-wrapper .january-wrapper .funds-wrapper .fund-unique {
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund-unique,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund-unique,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund-unique {
   border-left: 0 !important;
 }
-.dashboard-wrapper .january-wrapper .funds-wrapper .fund {
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund {
   padding-left: 24px;
   padding-bottom: 45px;
-  border-left: 2px dotted black;
+  position: relative;
+  background-image: url(../img/light-row.png);
+  background-repeat: no-repeat;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(1),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(1),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(1) {
   position: relative;
 }
-.dashboard-wrapper .january-wrapper .funds-wrapper .fund::before {
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(1)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(1)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(1)::before {
   content: "";
   position: absolute;
   background-image: url(../img/funds-icon-1.svg);
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  width: 16px;
+  height: 16px;
   left: -8px;
   top: 0px;
 }
-.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-card-sub {
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(2),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(2),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(2) {
+  position: relative;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(2)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(2)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/unactivr.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 0px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(3),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(3),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(3) {
+  position: relative;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(3)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(3)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/unactivr.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 0px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(4),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(4),
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(4) {
+  position: relative;
+  background-image: none;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:nth-child(4)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(4)::before,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/unactivr.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 0px;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund:last-child,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:last-child,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund:last-child {
+  background-image: none;
+}
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-card-sub,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund .fund-card-sub,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund .fund-card-sub {
   margin-bottom: 8px;
 }
-.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-card-sub2 {
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-card-sub2,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund .fund-card-sub2,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund .fund-card-sub2 {
   margin-bottom: 15px;
 }
-.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-icon {
+.dashboard-wrapper .january-wrapper .funds-wrapper .fund .fund-icon,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund .fund-icon,
+.dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund .fund-icon {
   gap: 9px;
 }/*# sourceMappingURL=style.css.map */

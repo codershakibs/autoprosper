@@ -406,6 +406,12 @@ select {
     padding: 10px 20px;
     border-radius: 100px;
     background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%);
+
+    &:hover {
+        background: #ECEEF1;
+
+    }
+
 }
 
 .task-dark-btn {
@@ -1055,8 +1061,18 @@ footer {
     //* email start 
     .email-sms-wrapper {
         margin-top: 12px;
-        padding: 24px 28px 16px 16px;
+        // padding: 24px 28px 16px 16px;
         min-height: 862px;
+
+        .email-details-wrapper {
+            gap: 38px;
+
+        }
+
+
+        .email-head {
+            padding: 24px 16px 16px 16px;
+        }
 
         .sub-email {
             &:hover {
@@ -1065,9 +1081,9 @@ footer {
         }
 
         .email-details {
-            margin-top: 32px;
-            padding: 16px 0 22px 0;
+            padding: 16px 16px 22px 16px;
             border-bottom: 1px solid #B7BCC3;
+
 
             .details {
                 margin-bottom: 11px;
@@ -1117,6 +1133,7 @@ footer {
         .filter-select {
             min-width: 240px;
             border: 0;
+            cursor: pointer;
         }
 
         .divider-2 {
@@ -1129,11 +1146,13 @@ footer {
         .filter-select2 {
             width: 213px;
             border: 0;
+            cursor: pointer;
         }
 
         .date-filter {
             padding: 12px 24px 15px 24px;
             border: 1px solid #B7BCC3;
+
 
 
         }
@@ -1199,6 +1218,10 @@ footer {
 
         .chat-btn {
             margin-top: 12px;
+        }
+
+        .cursor-ditect {
+            cursor: pointer;
         }
 
 
@@ -1275,10 +1298,10 @@ footer {
 
         .main-input {
             .main-middle-input {
-                padding: 17px 0 17px 30px;
+                padding: 17px 0 17px 44px;
                 background-image: url(../img/search-icon.png);
                 background-repeat: no-repeat;
-                background-position: 8px 20px;
+                background-position: left 18px top 50%;
                 border: 1px solid #8E97A6;
 
                 // top: 17px;
@@ -1367,9 +1390,16 @@ footer {
         padding: 10px 24px 10px 10px;
         gap: 20px;
 
+
         .bottom-cards {
             padding-bottom: 20px;
             border-bottom: 1px solid #B7BCC3;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+
 
             .min-unique {
                 position: relative;
@@ -1395,12 +1425,14 @@ footer {
         }
 
         .card-select {
-            padding: 18px 18px;
+            padding: 11px 18px;
             border: 1px solid #8E97A6;
             border-radius: 12px;
+            max-height: 72px;
 
             .cards-select {
                 width: 250px;
+                cursor: pointer;
             }
         }
 
@@ -1424,10 +1456,25 @@ footer {
             background-color: #E2FFF5;
             margin-bottom: 12px;
 
+            .jst-minutes,
+            .jst-hours,
+            .jst-seconds {
+                color: red !important;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+            }
+
+            .jst-minutes {
+                display: none;
+            }
+
             .bank-checkbox {
                 .bank-checkboxs {
                     gap: 8px;
                     margin-top: 16px;
+
+
 
                     .form-element {
                         input {
@@ -1471,10 +1518,14 @@ footer {
 
     //* january start 
 
-    .january-wrapper {
+    .january-wrapper,
+    .january-wrapper-2,
+    .january-wrapper-2 {
         padding: 24px 16px;
         background-color: #FFF;
         margin-top: 12px;
+
+
 
         .january-divider {
             background-color: #B7BCC3;
@@ -1490,23 +1541,101 @@ footer {
             }
 
 
+            // :nth-child(1) {
+            //     background-color: red;
+            // }
+
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     background-image: url(../img/funds-icon-1.svg);
+            //     background-repeat: no-repeat;
+            //     width: 100%;
+            //     height: 100%;
+            //     left: -8px;
+            //     top: 0px;
+            // }
+
+
 
             .fund {
                 padding-left: 24px;
                 padding-bottom: 45px;
-                border-left: 2px dotted black;
                 position: relative;
+                background-image: url(../img/light-row.png);
+                background-repeat: no-repeat;
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background-image: url(../img/funds-icon-1.svg);
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    height: 100%;
-                    left: -8px;
-                    top: 0px;
+                &:nth-child(1) {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../img/funds-icon-1.svg);
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        left: -8px;
+                        top: 0px;
+                    }
                 }
+
+                &:nth-child(2) {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../img/unactivr.png);
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        left: -8px;
+                        top: 0px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../img/unactivr.png);
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        left: -8px;
+                        top: 0px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    position: relative;
+
+                    background-image: none;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../img/unactivr.png);
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        left: -8px;
+                        top: 0px;
+                    }
+
+                }
+
+                &:last-child {
+                    background-image: none;
+                }
+
+
+
+
+
 
                 .fund-card-sub {
                     margin-bottom: 8px;
@@ -1519,6 +1648,8 @@ footer {
 
                 .fund-icon {
                     gap: 9px;
+
+
                 }
             }
 
@@ -1529,6 +1660,7 @@ footer {
 
 
     }
+
 
     // january end
 
