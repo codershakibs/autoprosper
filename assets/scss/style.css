@@ -388,6 +388,7 @@ select:focus {
 }
 .task-btn:hover {
   background: #ECEEF1;
+  background: linear-gradient(90deg, #FFE664 0%, #00FFA2 100%);
 }
 
 .task-dark-btn {
@@ -411,6 +412,12 @@ select:focus {
 nav .navbar-btn {
   background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%) !important;
   padding: 13px 20px;
+  border: 1px solid transparent;
+}
+nav .navbar-btn:hover {
+  background: yellow !important;
+  border: 1px solid green;
+  color: black;
 }
 @media (max-width: 575px) {
   nav .navbar-toggler-icon {
@@ -436,6 +443,12 @@ nav .navbar-btn {
   padding: 13px 20px;
   display: inline-block;
   color: #001B44;
+  border: 1px solid transparent;
+}
+.banner .banner-btn:hover {
+  background: yellow !important;
+  border: 1px solid green;
+  color: black;
 }
 .banner .banner-head,
 .banner .banner-sub-head {
@@ -501,6 +514,57 @@ nav .navbar-btn {
   border: 1px solid #00FFA2;
   box-shadow: 0px 36px 72px -18px rgba(0, 27, 68, 0.25);
   padding: 25px;
+}
+.discover .discover-right-col .discover-right-middle .form-select {
+  padding: 24px 24px 4px 24px;
+  height: 72px;
+  background-image: url('data:image/svg+xml,<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15L8 11H16L12 15Z" fill="%23001B44"/></svg>');
+  background-size: 23px 23px;
+  background-position: right 24px bottom 15px;
+  width: 100%;
+  border-radius: 12px;
+}
+.discover .discover-right-col .discover-right-middle .form-floating > label {
+  top: 6px;
+  left: 12px;
+}
+.discover .discover-right-col .discover-right-middle .down-payment {
+  padding: 24px 24px 4px 24px;
+  border-radius: 12px;
+  border: 1px solid #8E97A6;
+}
+.discover .discover-right-col .form-element {
+  position: relative;
+  width: 203px;
+  height: 105px;
+}
+.discover .discover-right-col .form-element .discount-off {
+  background-color: yellow;
+  padding: 4px 8px;
+  left: 12px;
+  top: 12px;
+}
+.discover .discover-right-col .form-element input {
+  display: none;
+}
+.discover .discover-right-col .form-element label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  transition: all 230ms linear;
+  padding: 47px 65px;
+  background-image: url(../img/discount-bg.png);
+  background-repeat: no-repeat;
+}
+.discover .discover-right-col .form-element input:checked + label {
+  border-color: green;
+  border: 1px solid;
+  background-image: url(../img/car-img-1.png);
+}
+.discover .discover-right-col .form-element input:checked + label h6 {
+  display: none;
 }
 @media (max-width: 575px) {
   .discover .discover-right-col {
@@ -848,6 +912,17 @@ footer .copy::after {
   min-height: 548px;
   padding: 24px 30px 16px 16px;
   background-color: #FFF;
+}
+.dashboard-wrapper .appointment-wrapper .dates {
+  position: relative;
+}
+.dashboard-wrapper .appointment-wrapper .dates::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 44px;
+  background: #B7BCC3;
+  left: -23px;
 }
 .dashboard-wrapper .appointment-wrapper .Progress {
   margin-top: 12px;
