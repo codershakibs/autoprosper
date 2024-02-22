@@ -400,6 +400,11 @@ select:focus {
   padding: 10px 20px;
   border-radius: 100px;
   background-color: #ECEEF1;
+  border: 1px solid transparent;
+}
+.refresh-btn:hover {
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
 }
 
 /* helper , base classes  - END*/
@@ -892,6 +897,10 @@ footer .copy::after {
 .dashboard-wrapper .appointment-wrapper .date-arrows {
   margin-bottom: 30px;
 }
+.dashboard-wrapper .appointment-wrapper .splide__arrow {
+  background: none !important;
+  top: 78px !important;
+}
 .dashboard-wrapper .email-sms-wrapper {
   margin-top: 12px;
   min-height: 862px;
@@ -903,7 +912,7 @@ footer .copy::after {
   background-color: red;
 }
 .dashboard-wrapper .email-sms-wrapper .email-details {
-  padding: 45px 16px 22px 16px;
+  padding: 24px 16px 24px 16px;
   border-bottom: 1px solid #B7BCC3;
 }
 .dashboard-wrapper .email-sms-wrapper .email-details:hover {
@@ -919,6 +928,7 @@ footer .copy::after {
   padding: 10px 97px;
   margin-top: 17px;
   margin-bottom: 19px;
+  border: 1px solid transparent;
 }
 .dashboard-wrapper .sales-wrapper {
   padding: 24px 16px;
@@ -945,10 +955,16 @@ footer .copy::after {
   width: 100%;
   height: 1px;
 }
-.dashboard-wrapper .filter-wrapper .filter-select2 {
-  width: 213px;
-  border: 0;
-  cursor: pointer;
+.dashboard-wrapper .filter-wrapper .form-floating .date-float {
+  left: 15px;
+}
+.dashboard-wrapper .filter-wrapper .form-floating .form-select {
+  background-image: url('data:image/svg+xml,<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 14.7344L5.75 8.98437L7.09167 7.6427L11.5 12.051L15.9083 7.6427L17.25 8.98437L11.5 14.7344Z" fill="%23001B44"/></svg>');
+  background-size: 23px 23px;
+  background-position: right 24px bottom 15px;
+  padding: 34px 24px 15px 24px;
+  height: 100%;
+  border-radius: 12px;
 }
 .dashboard-wrapper .filter-wrapper .date-filter {
   padding: 12px 24px 15px 24px;
@@ -959,7 +975,7 @@ footer .copy::after {
 }
 .dashboard-wrapper .chat-wrapper {
   background-color: #FFF;
-  padding: 104px 16px 16px 16px;
+  padding: 93px 16px 16px 16px;
   margin-top: 12px;
   min-height: 772px;
 }
@@ -972,7 +988,7 @@ footer .copy::after {
 .dashboard-wrapper .chat-wrapper .chats {
   margin-top: 110px;
   gap: 8px;
-  margin-top: 267px;
+  margin-top: 152px;
 }
 .dashboard-wrapper .chat-wrapper .chats .chat {
   padding: 8px 28px 10px 16px;
@@ -1035,6 +1051,19 @@ footer .copy::after {
 }
 .dashboard-wrapper .Appointer-wrapper .right-col .sale-head {
   margin-bottom: 24px;
+}
+.dashboard-wrapper .Appointer-wrapper .left-col {
+  position: relative;
+}
+.dashboard-wrapper .Appointer-wrapper .left-col::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 200px;
+  background: #B7BCC3;
+  top: 0;
+  right: -90px;
+  height: 100%;
 }
 .dashboard-wrapper .main-middle-wrapper {
   padding: 44px 25px 25px 25px;
@@ -1108,11 +1137,23 @@ footer .copy::after {
 .dashboard-wrapper .main-bottom-wrapper {
   background-color: #FFF;
   margin-top: 12px;
-  gap: 20px;
 }
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards {
   padding: 10px 24px 10px 10px;
   border-bottom: 1px solid #B7BCC3;
+}
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards .form-floating .form-select {
+  padding: 24px 10px 10px 18px;
+  height: 100%;
+  min-width: 300px;
+  border-radius: 12px;
+  background-image: url('data:image/svg+xml,<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 14.7344L5.75 8.98437L7.09167 7.6427L11.5 12.051L15.9083 7.6427L17.25 8.98437L11.5 14.7344Z" fill="%23001B44"/></svg>');
+  background-size: 23px 23px;
+  background-position: right 18px bottom 10px;
+}
+.dashboard-wrapper .main-bottom-wrapper .bottom-cards .form-floating > label {
+  top: -8px;
+  left: 6px;
 }
 .dashboard-wrapper .main-bottom-wrapper .bottom-cards:last-child {
   border-bottom: 0;
@@ -1195,6 +1236,11 @@ footer .copy::after {
   padding: 10px 70.5px;
   border: 0;
   opacity: 0.4;
+  border: 1px solid transparent;
+}
+.dashboard-wrapper .dealerplex-wrapper .bank-btn:hover {
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
 }
 .dashboard-wrapper .january-wrapper,
 .dashboard-wrapper .january-wrapper-2,
@@ -1220,7 +1266,7 @@ footer .copy::after {
 .dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund,
 .dashboard-wrapper .january-wrapper-2 .funds-wrapper .fund {
   padding-left: 24px;
-  padding-bottom: 45px;
+  padding-bottom: 22px;
   position: relative;
   background-image: url(../img/light-row.png);
   background-repeat: no-repeat;

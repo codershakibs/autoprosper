@@ -227,3 +227,33 @@ document.addEventListener("DOMContentLoaded", function () {
 $(function () {
     $('.timer').startTimer();
 })
+
+//
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll(".dash-slide");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            gap: "40px",
+            pagination: true,
+            breakpoints: {
+                1350: {
+                    gap: "20px",
+                },
+                991: {
+                    perPage: 2,
+                    gap: "15px",
+                },
+                586: {
+                    perPage: 1,
+                    gap: "10px",
+                },
+            },
+        });
+
+        splide.mount();
+    });
+});

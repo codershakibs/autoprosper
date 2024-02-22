@@ -39,14 +39,13 @@
     <!-- bootstrap cdn  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- splide slider cdn  -->
-    <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/scss/style.css">
     <!-- jQuery (necessary for jQuery plugins) -->
 
-    <script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
 </head>
 
 <body>
@@ -116,36 +115,58 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                 up</a>
                         </div>
                         <div class="divider mt-4 mb-4"></div>
+                        <div>
+                            <section class="splide dash-slide" aria-label="Custom Arrows Example">
+                                <div class="splide__arrows">
+                                    <button class="splide__arrow splide__arrow--prev">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z"
+                                                fill="#001B44" />
+                                        </svg>
 
 
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z"
+                                                fill="#001B44" />
+                                        </svg>
 
-                        <div class="appoint-date">
-                            <div class="d-flex justify-content-between mb-4">
-                                <div class="dates d-flex flex-column align-items-center gap-1">
-                                    <p class="fs-12 fw-semi-medium lh-18 text-dark-4">Today</p>
-                                    <h5 class="fs-18 fw-bold lh-23">01</h5>
+                                    </button>
                                 </div>
-                                <div class="dates d-flex flex-column align-items-center gap-1">
-                                    <p class="fs-12 fw-semi-medium lh-18 text-dark-4">This week</p>
-                                    <h5 class="fs-18 fw-bold lh-23">07</h5>
+
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="appoint-date">
+                                                <div class="d-flex justify-content-between mb-4">
+                                                    <div class="dates d-flex flex-column align-items-center gap-1">
+                                                        <p class="fs-12 fw-semi-medium lh-18 text-dark-4">Today</p>
+                                                        <h5 class="fs-18 fw-bold lh-23">01</h5>
+                                                    </div>
+                                                    <div class="dates d-flex flex-column align-items-center gap-1">
+                                                        <p class="fs-12 fw-semi-medium lh-18 text-dark-4">This week</p>
+                                                        <h5 class="fs-18 fw-bold lh-23">07</h5>
+                                                    </div>
+                                                    <div class="dates d-flex flex-column align-items-center gap-1">
+                                                        <p class="fs-12 fw-semi-medium lh-18 text-dark-4">Next 72 H</p>
+                                                        <h5 class="fs-18 fw-bold lh-23">03</h5>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="date-arrows d-flex align-items-center gap-5 justify-content-center ">
+                                                    <p class="fs-12 fw-semi-medium lh-18">1/5 UPCOMING</p>
+
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                    </ul>
                                 </div>
-                                <div class="dates d-flex flex-column align-items-center gap-1">
-                                    <p class="fs-12 fw-semi-medium lh-18 text-dark-4">Next 72 H</p>
-                                    <h5 class="fs-18 fw-bold lh-23">03</h5>
-                                </div>
-                            </div>
-                            <div class="date-arrows d-flex align-items-center gap-5 justify-content-center ">
-                                <a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.4 12L16 16.6L14.6 18L8.6 12L14.6 6L16 7.4L11.4 12Z"
-                                            fill="#8E97A6" />
-                                    </svg></a>
-                                <p class="fs-12 fw-semi-medium lh-18">1/5 UPCOMING</p>
-                                <a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z" fill="#001B44" />
-                                    </svg></a>
-                            </div>
+                            </section>
 
                         </div>
 
@@ -153,11 +174,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
+
+
+
+
                     </div>
                     <div class="email-sms-wrapper radius-16 bg-white">
-                        <div class="email-head d-flex justify-content-between">
+                        <div class="email-head d-flex justify-content-between align-items-center">
                             <h5 class="fs-18 fw-bold lh-23 text-dark">Email and SMS</h5>
-                            <p class="fs-10 fw-semi-medium text-dark-3">SEE ALL</p>
+                            <a class="fs-10 fw-semi-medium text-dark-3" href="">SEE ALL</a>
                         </div>
                         <div class="email-details-wrapper">
                             <div class="email-details">
@@ -398,18 +423,29 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                 </select>
                             </div>
                             <div class="divider-2"></div>
-                            <div class="date-filter radius-12">
-                                <p class="fs-10 fw-bold text-dark-4">Date</p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <!-- <p class="fs-18 fw-medium text-dark">Past 12 months</p> -->
-                                    <select class="filter-select2 fs-18 fw-medium text-dark">
-                                        <option class="" value="volvo">Past 12 months</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="opel">Opel</option>
-                                        <option value="audi">Audi</option>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect"
+                                        class="date-float fs-10 fw-bold text-dark-4">Date</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Past 12 months</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
                                     </select>
+
+
                                 </div>
+
+
                             </div>
+
+
+
+
+
+
                             <div class="filter-dates d-flex justify-content-between">
                                 <div class="d-flex align-items-center gap-1">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -740,16 +776,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -773,16 +811,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -806,16 +846,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -839,16 +881,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -872,16 +916,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -905,16 +951,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -938,16 +986,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                                 </div>
                             </div>
-                            <div class="card-select d-flex flex-column">
-                                <label for="" class="">
-                                    <span class="fs-9 fw-bold text-dark-4">Lead conversion phase</span>
-                                </label>
-                                <select class="cards-select border-0 fs-14 fw-semibold text-dark">
-                                    <option value="volvo">Warm-Engaged</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div>
+                                <div class="form-floating">
+                                    <label for="floatingSelect" class="date-float fs-10 fw-bold text-dark-4">Lead
+                                        conversion phase</label>
+                                    <select class="form-select fs-18 fw-medium text-dark" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Warm-Engaged</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-btns d-inline-flex flex-column text-center gap-2">
                                 <a class="warm-btn card-btn1 text-white fs-10 fw-bold" href="">A.i warm up</a>
@@ -1308,32 +1358,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- auto scroll splide js extension  -->
     <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js
+
+
+
+    "></script>
     <!-- Script JS -->
 
     <!-- Load plotly.js into the DOM -->
     <script src="assets/js/script.js"></script>
 
-    <script>
-        let gd = document.getElementById('myDiv');
-        let data = [{
-            type: 'funnelarea', values: [5, 4, 3, 2, 1], text: ["The 1st", "The 2nd", "The 3rd", "The 4th", "The 5th"],
-            marker: {
-                colors: ["59D4E8", "DDB6C6", "A696C8", "67EACA", "94D2E6"],
-                line: { color: ["3E4E88", "606470", "3E4E88", "606470", "3E4E88"], width: [2, 1, 5, 0, 3] }
-            },
-            textfont: { family: "Old Standard TT", size: 13, color: "black" }, opacity: 0.65
-        }];
-
-        let layout = { margin: { l: 200, r: 200 }, funnelmode: "stack", showlegend: 'True' }
-
-        Plotly.newPlot('myDiv', data, layout);
-    </script>
 </body>
 
 </html>
