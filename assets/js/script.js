@@ -224,9 +224,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// $(function () {
-//     $('.timer').startTimer();
-// })
+$(function () {
+    $('.timer').startTimer();
+})
 
 //
 document.addEventListener("DOMContentLoaded", function () {
